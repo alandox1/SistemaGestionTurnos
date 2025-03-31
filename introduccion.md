@@ -140,3 +140,8 @@ El usuario debe estar registrado en el sistema.
 Postcondiciones:
 
 La contraseña se actualiza y el usuario puede iniciar sesión nuevamente.
+
+BOCETO INICIAL DEL DISEÑO DE CLASES
+![Captura de pantalla 2025-03-30 215756](https://github.com/user-attachments/assets/5948340a-80d8-4642-a307-5bd1b3fde944)
+
+
