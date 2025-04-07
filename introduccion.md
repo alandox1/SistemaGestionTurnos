@@ -1,5 +1,4 @@
 # Anexo - Introducción al Diseño Orientado a Objetos
-Introducción
 ¿Qué es la Programación Orientada a Objetos (POO)?
 La Programación Orientada a Objetos (POO) es un paradigma de programación basado en la organización del código en objetos, que representan entidades del mundo real.
 Es importante porque permite crear software modular, reutilizable y fácil de mantener.
