@@ -21,126 +21,92 @@ Polimorfismo
 Permite que una misma acción tenga diferentes comportamientos según el objeto.
 Ejemplo: Un "Animal" puede hacer un sonido, pero cada tipo de animal emite un sonido diferente (perro: ladrido, gato: maullido).
 
-# Requisitos iniciales del sistema
+Requisitos iniciales del sistema
 Registro de usuarios: El sistema debe permitir la creación y gestión de usuarios.
 Gestión de turnos: Los usuarios deben poder solicitar, cancelar y reprogramar turnos.
 Notificaciones: El sistema debe enviar recordatorios de turnos vía correo o mensaje.
 Historial de turnos: Se debe permitir consultar turnos pasados.
 Control de acceso: Solo usuarios registrados pueden acceder a ciertas funciones.
 
-Caso de Uso 1: Iniciar Sesión
+# Casos de Usos
 
-Actor(es) involucrado(s): Usuario registrado
-
-Descripción breve: Permite al usuario autenticarse en el sistema mediante sus credenciales.
-
+1. Nombre del caso de uso: Registrar nuevo paciente
+Actor(es) involucrado(s): Paciente
+Descripción breve: Un paciente se registra en el sistema proporcionando sus datos personales.
 Flujo principal de eventos:
-El usuario ingresa su nombre de usuario y contraseña.
 
-El sistema valida las credenciales.
+El paciente accede al formulario de registro.
 
-Si son correctas, el sistema concede acceso al usuario.
-
-Se redirige al usuario a la página de inicio.
-
-Precondiciones:
-El usuario debe estar registrado en el sistema.
-
-Postcondiciones:
-El usuario ha iniciado sesión y tiene acceso a las funcionalidades del sistema.
-
-Caso de Uso 2: Registrar Usuario
-
-Actor(es) involucrado(s): Usuario nuevo
-
-Descripción breve: Permite a un nuevo usuario registrarse en el sistema.
-
-Flujo principal de eventos:
-El usuario ingresa su información (nombre, correo, contraseña).
+Completa sus datos personales: nombre, DNI, correo electrónico, teléfono, etc.
 
 El sistema valida los datos.
 
-El sistema almacena la información y envía un correo de confirmación.
+Si son válidos, el sistema crea un perfil de paciente.
+Precondiciones: El paciente no debe estar registrado previamente con el mismo DNI o correo.
+Postcondiciones: El paciente queda registrado y puede iniciar sesión para solicitar turnos.
 
-El usuario confirma el registro a través del correo.
-
-Precondiciones:
-El usuario no debe estar registrado previamente.
-
-Postcondiciones:
-El usuario queda registrado y puede iniciar sesión en el sistema.
-
-Caso de Uso 3: Realizar Compra
-
-Actor(es) involucrado(s): Cliente
-
-Descripción breve: Permite al cliente comprar productos en la tienda en línea.
-
-Flujo principal de eventos:
-El cliente selecciona productos y los agrega al carrito.
-
-El cliente procede al pago.
-
-El sistema solicita los datos de pago y dirección de envío.
-
-Se valida el pago y se confirma la compra.
-
-El sistema genera un número de pedido y envía confirmación al cliente.
-
-Precondiciones:
-El cliente debe tener productos en el carrito.
-
-El sistema debe estar disponible.
-
-Postcondiciones:
-Se registra el pedido y se inicia el proceso de envío.
-
-Caso de Uso 4: Generar Reporte de Ventas
-
-Actor(es) involucrado(s): Administrador
-
-Descripción breve: Permite al administrador obtener un informe de ventas en un período determinado.
-
-Flujo principal de eventos:
-El administrador accede a la sección de reportes.
-
-Ingresa el rango de fechas para el reporte.
-
-El sistema recopila y procesa la información de ventas.
-
-Se genera un documento con el reporte solicitado.
-
-Precondiciones:
-El usuario debe ser un administrador autorizado.
-
-Debe haber ventas registradas en el período consultado.
-
-Postcondiciones:
-Se genera y se muestra el reporte solicitado.
-
-Caso de Uso 5: Recuperar Contraseña
-
-Actor(es) involucrado(s): Usuario registrado
-
-Descripción breve: Permite a un usuario recuperar su contraseña en caso de olvido.
-
+2. Nombre del caso de uso: Iniciar sesión en el sistema
+Actor(es) involucrado(s): Paciente, Médico, Administrador
+Descripción breve: Un usuario del sistema inicia sesión para acceder a sus funcionalidades.
 Flujo principal de eventos:
 
-El usuario solicita la recuperación de contraseña.
+El usuario accede a la página de inicio de sesión.
 
-El sistema solicita el correo electrónico del usuario.
+Ingresa su usuario (DNI o correo) y contraseña.
 
-Se envía un enlace de recuperación al correo proporcionado.
+El sistema verifica las credenciales.
 
-El usuario accede al enlace y establece una nueva contraseña.
+Si son correctas, el sistema permite el acceso según el perfil (paciente, médico o admin).
+Precondiciones: El usuario debe estar registrado.
+Postcondiciones: El usuario accede al sistema con los permisos correspondientes.
 
-Precondiciones:
+3. Nombre del caso de uso: Solicitar turno médico
+Actor(es) involucrado(s): Paciente
+Descripción breve: El paciente selecciona un médico, una especialidad y solicita un turno.
+Flujo principal de eventos:
 
-El usuario debe estar registrado en el sistema.
+El paciente inicia sesión.
 
-Postcondiciones:
+Selecciona la especialidad y/o profesional médico.
 
-La contraseña se actualiza y el usuario puede iniciar sesión nuevamente.
+Consulta los horarios disponibles.
+
+Selecciona un día y hora.
+
+El sistema confirma la reserva del turno.
+Precondiciones: El paciente debe estar registrado e iniciar sesión.
+Postcondiciones: El turno queda reservado y asociado al paciente y al médico correspondiente.
+
+4. Nombre del caso de uso: Cancelar turno
+Actor(es) involucrado(s): Paciente
+Descripción breve: El paciente cancela un turno previamente reservado.
+Flujo principal de eventos:
+
+El paciente accede a su lista de turnos.
+
+Selecciona el turno que desea cancelar.
+
+Confirma la cancelación.
+
+El sistema elimina el turno y lo libera para otros pacientes.
+Precondiciones: El paciente debe haber reservado un turno previamente.
+Postcondiciones: El turno se libera y queda disponible en el sistema.
+
+5. Nombre del caso de uso: Registrar atención médica
+Actor(es) involucrado(s): Médico
+Descripción breve: El médico registra la atención de un paciente en su turno asignado.
+Flujo principal de eventos:
+
+El médico inicia sesión y accede a su agenda.
+
+Selecciona el turno correspondiente al paciente atendido.
+
+Registra el diagnóstico, tratamiento y observaciones.
+
+Guarda la información en la historia clínica del paciente.
+Precondiciones: El turno debe estar asignado al médico y marcado como “en atención” o “confirmado”.
+Postcondiciones: Los datos de atención quedan registrados y disponibles en el historial clínico del paciente.
+
 
 # Boceto inicial del Diseño de Clases
 ![Captura de pantalla 2025-03-30 215756](https://github.com/user-attachments/assets/5948340a-80d8-4642-a307-5bd1b3fde944)
