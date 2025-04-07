@@ -145,4 +145,6 @@ La contraseña se actualiza y el usuario puede iniciar sesión nuevamente.
 # Boceto inicial del Diseño de Clases
 ![Captura de pantalla 2025-03-30 215756](https://github.com/user-attachments/assets/5948340a-80d8-4642-a307-5bd1b3fde944)
 
+https://drive.google.com/file/d/1jiek8sjVPBmd5IyPmZswwbKYbqTEBVyl/view?usp=sharing
+
 
