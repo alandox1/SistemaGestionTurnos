@@ -31,7 +31,7 @@ Control de acceso: Solo usuarios registrados pueden acceder a ciertas funciones.
 # Casos de Usos
 
 1. Nombre del caso de uso: Registrar nuevo paciente
-2. 
+   
 Actor(es) involucrado(s): Paciente
 
 Descripción breve: Un paciente se registra en el sistema proporcionando sus datos personales.
