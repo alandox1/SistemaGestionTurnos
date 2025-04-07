@@ -104,7 +104,9 @@ Selecciona el turno correspondiente al paciente atendido.
 Registra el diagnóstico, tratamiento y observaciones.
 
 Guarda la información en la historia clínica del paciente.
+
 Precondiciones: El turno debe estar asignado al médico y marcado como “en atención” o “confirmado”.
+
 Postcondiciones: Los datos de atención quedan registrados y disponibles en el historial clínico del paciente.
 
 
