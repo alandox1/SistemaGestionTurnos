@@ -4,7 +4,7 @@
 La Programación Orientada a Objetos (POO) es un paradigma de programación basado en la organización del código en objetos, que representan entidades del mundo real.
 Es importante porque permite crear software modular, reutilizable y fácil de mantener.
 
-Cuatro fundamentos de POO
+# Los cuatro fundamentos de POO
 Abstracción
 Es la capacidad de representar elementos del mundo real en el código.
 Ejemplo: Un "Auto" puede representarse con atributos (marca, modelo) y métodos (arrancar, frenar).
