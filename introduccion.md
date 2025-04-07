@@ -21,7 +21,7 @@ Polimorfismo
 Permite que una misma acción tenga diferentes comportamientos según el objeto.
 Ejemplo: Un "Animal" puede hacer un sonido, pero cada tipo de animal emite un sonido diferente (perro: ladrido, gato: maullido).
 
-Requisitos iniciales del sistema
+# Requisitos iniciales del sistema
 Registro de usuarios: El sistema debe permitir la creación y gestión de usuarios.
 Gestión de turnos: Los usuarios deben poder solicitar, cancelar y reprogramar turnos.
 Notificaciones: El sistema debe enviar recordatorios de turnos vía correo o mensaje.
