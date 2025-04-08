@@ -1,11 +1,11 @@
 # Gestion de Turnos Medicos - Diseño del sistema
-Diaz Alan
+Nombre:Diaz Alan
 
-Diseño orientado a objetos - Tecnicatura en Programacion
+Materia y Carrera:Diseño orientado a objetos - Tecnicatura en Programacion
 
 Prof.Matias Velasquez
 
-1°año
+Año:1°año
 
 # Sistema de Gestión de Turnos
 
