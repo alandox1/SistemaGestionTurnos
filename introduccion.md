@@ -100,10 +100,15 @@ Si saluda a un niño: “¡Hola!”
 [ Saludo a niño ] → “¡Hola!”
 
 Requisitos iniciales del sistema
+
 Registro de usuarios: El sistema debe permitir la creación y gestión de usuarios.
+
 Gestión de turnos: Los usuarios deben poder solicitar, cancelar y reprogramar turnos.
+
 Notificaciones: El sistema debe enviar recordatorios de turnos vía correo o mensaje.
+
 Historial de turnos: Se debe permitir consultar turnos pasados.
+
 Control de acceso: Solo usuarios registrados pueden acceder a ciertas funciones.
 
 ## Casos de Usos
