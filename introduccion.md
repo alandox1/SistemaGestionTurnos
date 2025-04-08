@@ -6,7 +6,9 @@ Es importante porque permite crear software modular, reutilizable y fácil de ma
 
 ## Los cuatro fundamentos de POO
 Abstracción
-Es la capacidad de representar elementos del mundo real en el código.
+
+La abstracción es el proceso de reducir la complejidad de un sistema al enfocarse solo en los aspectos relevantes para el usuario. Permite ocultar los detalles internos y presentar una interfaz simple y comprensible.
+
 Ejemplo: 
  Un control remoto de TV
  
@@ -24,8 +26,12 @@ Ejemplo:
 
 
 Encapsulamiento
-Protege los datos de un objeto, permitiendo acceso solo a través de métodos específicos.
+
+El encapsulamiento protege los datos de un objeto al restringir el acceso directo a sus atributos internos. Solo se pueden modificar o consultar mediante métodos definidos.
+Esto evita errores y protege la integridad de los datos.
+
 Ejemplo:
+
 Un microondas
 
 Tiene botones para calentar, descongelar, etc.
@@ -42,9 +48,13 @@ No ves ni puedes modificar directamente los componentes internos (como los circu
   
 + Parar
   
+  
 Herencia
-Permite que una clase reutilice características de otra.
-Ejemplo: Vehículos
+
+La herencia es la capacidad de una clase para tomar atributos y comportamientos de otra clase más general. Esto permite crear una jerarquía de clases donde las más específicas amplían o especializan a las más generales.
+
+Ejemplo: 
+Vehículos
 
 Un automóvil y una moto comparten cosas comunes como:
 
@@ -69,8 +79,25 @@ Usan combustible o batería
 - Casco
 
 Polimorfismo
-Permite que una misma acción tenga diferentes comportamientos según el objeto.
-Ejemplo: Un "Animal" puede hacer un sonido, pero cada tipo de animal emite un sonido diferente (perro: ladrido, gato: maullido).
+
+El polimorfismo permite que el mismo método o acción pueda tener diferentes comportamientos según el objeto que lo ejecute.
+
+Ejemplo: 
+Una persona saludando
+
+Si saluda a un amigo: “¡Qué onda!”
+
+Si saluda a un jefe: “Buenos días”
+
+Si saluda a un niño: “¡Hola!”
+
++ Saludar
+
+[ Saludo a amigo ] → “¡Qué onda!”
+
+[ Saludo a jefe ] → “Buenos días”
+
+[ Saludo a niño ] → “¡Hola!”
 
 Requisitos iniciales del sistema
 Registro de usuarios: El sistema debe permitir la creación y gestión de usuarios.
