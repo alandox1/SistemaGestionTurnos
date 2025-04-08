@@ -1,10 +1,10 @@
-# Anexo - Introducción al Diseño Orientado a Objetos
+## Anexo - Introducción al Diseño Orientado a Objetos
 ¿Qué es la Programación Orientada a Objetos (POO)?
 
 La Programación Orientada a Objetos (POO) es un paradigma de programación basado en la organización del código en objetos, que representan entidades del mundo real.
 Es importante porque permite crear software modular, reutilizable y fácil de mantener.
 
-# Los cuatro fundamentos de POO
+## Los cuatro fundamentos de POO
 Abstracción
 Es la capacidad de representar elementos del mundo real en el código.
 Ejemplo: Un "Auto" puede representarse con atributos (marca, modelo) y métodos (arrancar, frenar).
@@ -28,7 +28,7 @@ Notificaciones: El sistema debe enviar recordatorios de turnos vía correo o men
 Historial de turnos: Se debe permitir consultar turnos pasados.
 Control de acceso: Solo usuarios registrados pueden acceder a ciertas funciones.
 
-# Casos de Usos
+## Casos de Usos
 
 1. Nombre del caso de uso: Registrar nuevo paciente
    
@@ -133,7 +133,7 @@ Precondiciones: El turno debe estar asignado al médico y marcado como “en ate
 Postcondiciones: Los datos de atención quedan registrados y disponibles en el historial clínico del paciente.
 
 
-# Boceto inicial del Diseño de Clases
+## Boceto inicial del Diseño de Clases
 ![Captura de pantalla 2025-03-30 215756](https://github.com/user-attachments/assets/5948340a-80d8-4642-a307-5bd1b3fde944)
 
 https://drive.google.com/file/d/1jiek8sjVPBmd5IyPmZswwbKYbqTEBVyl/view?usp=sharing
