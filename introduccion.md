@@ -7,15 +7,66 @@ Es importante porque permite crear software modular, reutilizable y fácil de ma
 ## Los cuatro fundamentos de POO
 Abstracción
 Es la capacidad de representar elementos del mundo real en el código.
-Ejemplo: Un "Auto" puede representarse con atributos (marca, modelo) y métodos (arrancar, frenar).
+Ejemplo: 
+ Un control remoto de TV
+ 
+ Control Remoto 
+ 
+- Canal actual
+  
+- Volumen
+
++ Cambiar canal
+  
++ Subir/bajar volumen
+  
++ Encender/apagar
+
 
 Encapsulamiento
 Protege los datos de un objeto, permitiendo acceso solo a través de métodos específicos.
-Ejemplo: Un "Cajero Automático" no permite acceso directo al dinero, solo mediante transacciones.
+Ejemplo:
+Un microondas
 
+Tiene botones para calentar, descongelar, etc.
+
+No ves ni puedes modificar directamente los componentes internos (como los circuitos o el transformador).
+
+- Temporizador (interno)
+  
+- Voltaje (interno)
+
++ Iniciar cocción
+  
++ Ajustar tiempo
+  
++ Parar
+  
 Herencia
 Permite que una clase reutilice características de otra.
-Ejemplo: Un "Auto Deportivo" hereda de la clase "Auto", pero añade características como mayor velocidad.
+Ejemplo: Vehículos
+
+Un automóvil y una moto comparten cosas comunes como:
+
+Tienen ruedas
+
+Pueden moverse
+
+Usan combustible o batería
+
+- Ruedas
+  
+- Motor
+  
+- Combustible
+
+[ Auto ] ← hereda de Vehículo
+
+- Aire acondicionado
+
+[ Moto ] ← hereda de Vehículo
+
+- Casco
 
 Polimorfismo
 Permite que una misma acción tenga diferentes comportamientos según el objeto.
