@@ -24,7 +24,7 @@ Quiero recordar mis turnos anteriores.
 
 **Propiedad:** nombre, apellido, fechaNacimiento, DNI, numeroHistoriaClinica.
 
-![tarjetacrcpaciente drawio](https://github.com/user-attachments/assets/531d57fb-924a-449e-97e5-4184cfcdc287)
+![tarjetacrcpaciente drawio](https://github.com/user-attachments/assets/061342c7-b22c-4980-93f9-23fda2a965c7)
 
 
 ### Tarjeta CRC: Usuario
