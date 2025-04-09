@@ -47,7 +47,7 @@ Registrar diagnósticos y observaciones médicas
 
 Acceder al historial clínico de sus pacientes
 
-Modificar o cancelar turnos (si aplica política del sistema)
+Modificar o cancelar turnos 
 
 Consultar disponibilidad para nuevos turnos
 
