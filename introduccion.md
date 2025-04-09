@@ -5,7 +5,7 @@ La Programación Orientada a Objetos (POO) es un paradigma de programación basa
 Es importante porque permite crear software modular, reutilizable y fácil de mantener.
 
 ## Los cuatro fundamentos de POO
-Abstracción
+*Abstracción*
 
 La abstracción es el proceso de reducir la complejidad de un sistema al enfocarse solo en los aspectos relevantes para el usuario. Permite ocultar los detalles internos y presentar una interfaz simple y comprensible.
 
