@@ -6,14 +6,14 @@ herramienta esencial en el enfoque de la programación orientada a objetos (POO)
 utilizan para identificar y definir las clases principales de un sistema, así como sus
 responsabilidades y colaboraciones dentro del contexto del sistema
 
-### Tarjeta CRC: Paciente
+### Tarjeta CRC: Médico
 **Caso de Uso 1**
 
 **Nombre de la Clase:** Paciente
 
 **Superclase:** Persona
 
-**Subclase:**
+**Subclase:** -
 
 **Pensamiento del objeto:** Sé qué especialista requiero junto a mis datos personales. Necesito ver cuándo y con quién tengo turno. Avisare cuando no pueda asistir. Mis datos pueden cambiar.
 Quiero recordar mis turnos anteriores.
@@ -31,21 +31,35 @@ Quiero recordar mis turnos anteriores.
 
 **Caso de Uso 2**
 
-**Nombre de la Clase:** Usuario
+**Nombre de la Clase:** Médico
 
 **Superclase:** Persona
-**Subclase:** Recepcionista, Médico, Administrador
 
-**Pensamiento del objeto:** Tengo un nombre de usuario y una contraseña. Necesito verificar mis credenciales para acceder al sistema. Si son válidas, quiero usar el sistema según mi rol.
+**Subclase:** —
 
-**Responsabilidades:**
+**Pensamiento del objeto:** Atiendo pacientes en los horarios asignados. Necesito ver mi agenda, registrar observaciones y diagnósticos. Puedo modificar turnos si es necesario. Quiero acceder al historial de consultas de mis pacientes.
 
-Almacenar nombre de usuario y contraseña
+**Responsabilidades principales:**
 
-Verificar credenciales
+Visualizar y gestionar su agenda de turnos
 
-Establecer rol (tipo de usuario)
+Registrar diagnósticos y observaciones médicas
 
-**Colaboradores:** GestordeAutenticacion, Persona
+Acceder al historial clínico de sus pacientes
 
-**Propiedad:** nombreUsuario, contraseña, rol
+Modificar o cancelar turnos (si aplica política del sistema)
+
+Consultar disponibilidad para nuevos turnos
+
+**Colaboraciones con otras clases:**
+
+Turno
+
+Paciente
+
+HistoriaClinica
+
+Agenda
+
+**Propiedad a la que se referenciará:**
+nombre, apellido, especialidad, matriculaProfesional, horariosAtencion
