@@ -25,3 +25,27 @@ Quiero recordar mis turnos anteriores.
 **Propiedad:** nombre, apellido, fechaNacimiento, DNI, numeroHistoriaClinica.
 
 ![tarjetacrcpaciente drawio](https://github.com/user-attachments/assets/531d57fb-924a-449e-97e5-4184cfcdc287)
+
+
+### Tarjeta CRC: Usuario
+
+**Caso de Uso 2**
+
+**Nombre de la Clase:** Usuario
+
+**Superclase:** Persona
+**Subclase:** Recepcionista, Médico, Administrador
+
+**Pensamiento del objeto:** Tengo un nombre de usuario y una contraseña. Necesito verificar mis credenciales para acceder al sistema. Si son válidas, quiero usar el sistema según mi rol.
+
+**Responsabilidades:**
+
+Almacenar nombre de usuario y contraseña
+
+Verificar credenciales
+
+Establecer rol (tipo de usuario)
+
+**Colaboradores:** GestordeAutenticacion, Persona
+
+**Propiedad:** nombreUsuario, contraseña, rol
