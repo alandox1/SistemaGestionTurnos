@@ -9,7 +9,7 @@ responsabilidades y colaboraciones dentro del contexto del sistema
 ### Tarjeta CRC: Paciente
 **Nombre de la Clase:** Paciente
 
-**Superclase:**Persona
+**Superclase:** Persona
 
 **Subclase:**
 
