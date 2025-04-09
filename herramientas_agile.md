@@ -7,7 +7,6 @@ utilizan para identificar y definir las clases principales de un sistema, así c
 responsabilidades y colaboraciones dentro del contexto del sistema
 
 ### Tarjeta CRC: Médico
-**Caso de Uso 1**
 
 **Nombre de la Clase:** Paciente
 
@@ -28,8 +27,6 @@ Quiero recordar mis turnos anteriores.
 
 
 ### Tarjeta CRC: Usuario
-
-**Caso de Uso 2**
 
 **Nombre de la Clase:** Médico
 
