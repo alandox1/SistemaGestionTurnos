@@ -63,3 +63,6 @@ Agenda
 
 **Propiedad a la que se referenciará:**
 nombre, apellido, especialidad, matriculaProfesional, horariosAtencion
+
+![tarjetacrcpaciente](https://github.com/user-attachments/assets/572455f4-6e30-4498-be79-5467380a5980)
+
