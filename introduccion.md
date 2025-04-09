@@ -219,5 +219,8 @@ Postcondiciones: Los datos de atención quedan registrados y disponibles en el h
 ## Boceto inicial del Diseño de Clases
 
 
+![BocetoDiseñodeclases](https://github.com/user-attachments/assets/ab6fccfe-be0a-4f40-911f-73bcac92eec1)
+
+
 
 
