@@ -20,7 +20,7 @@ Quiero recordar mis turnos anteriores.
 
 **Responsabilidades:** Solicitar un turno, Consultar sus turnos programados, Cancelar un turno, Actualizar sus datos personales, Ver el historial de sus consultas.
 
-**Colaboradores:** Agenda, Turno, Médico.
+**Colaboradores:** Agenda, Turno, Médico,Recepcionista.
 
 **Propiedad:** nombre, apellido, fechaNacimiento, DNI, numeroHistoriaClinica.
 
