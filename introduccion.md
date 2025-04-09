@@ -222,7 +222,7 @@ Postcondiciones: Los datos de atención quedan registrados y disponibles en el h
 ![BocetoDiseñodeclases](https://github.com/user-attachments/assets/ab6fccfe-be0a-4f40-911f-73bcac92eec1)
 
 
-[Enlace del Boceto](https://drive.google.com/file/d/1AGTLqMiX6ThUy_enTLA-AHlU4DWAv7vd/view?usp=drive_link))
+[Enlace del Boceto](https://drive.google.com/file/d/1AGTLqMiX6ThUy_enTLA-AHlU4DWAv7vd/view?usp=drive_link)
 
 
 
