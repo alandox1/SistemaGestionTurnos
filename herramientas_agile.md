@@ -83,7 +83,8 @@ Me encargo de la gestión de la agenda. Registro nuevos pacientes.organizo turno
 
 **Propiedad:** fecha, hora, estado, paciente,motivoCancelacion.
 
-![Captura de pantalla 2025-04-09 225917](https://github.com/user-attachments/assets/d3796057-f4e0-4020-82a6-ff37cb0334fc)
+
+![Captura de pantalla 2025-04-09 231310](https://github.com/user-attachments/assets/3d6c55ed-fe45-4fa3-a718-17ac98fade05)
 
 
 
