@@ -28,9 +28,9 @@ Permite que un nuevo usuario se registre en el sistema proporcionando sus datos 
  * Si todo está correcto, se guarda la nueva cuenta.
 
 ### Condiciones
-* Precondiciones:No debe existir una cuenta previo con el mismo correo/DNI
-* Poscondiciones:Usuario registrado y habilitado para iniciar sesion
-* Suposiciones:El formulario esta correctamente validado.
+* **Precondiciones:** No debe existir una cuenta previo con el mismo correo/DNI
+* **Poscondiciones:** Usuario registrado y habilitado para iniciar sesion
+* **Suposiciones:** El formulario esta correctamente validado.
 
 ![Captura de pantalla 2025-04-10 175705](https://github.com/user-attachments/assets/bb458447-b548-4a52-8ddc-8a7f886709ab)
 
@@ -58,9 +58,9 @@ Permite a los usuarios del sistema (pacientes, médicos o administradores) acced
 
  * El sistema redirige al usuario al menu dependiendo su rol
 ### Condiciones
-* Precondiciones:Usuario debe estar registrado
-* Poscondiciones:acceso permitido o denegado segun resultado
-* Suposiciones:Los datos estan correctamente almacenados.
+* **Precondiciones:** Usuario debe estar registrado
+* **Poscondiciones:** acceso permitido o denegado segun resultado
+* **Suposiciones:** Los datos estan correctamente almacenados.
 
 ![Captura de pantalla 2025-04-10 172205](https://github.com/user-attachments/assets/395a84cd-a14a-47b6-bc40-795301eb162a)
 
@@ -96,9 +96,9 @@ Permite a los pacientes registrados en el sistema seleccionar una especialidad m
 
  * Si todo es correcto, el sistema guarda el turno y lo asigna al paciente.
 ### Condiciones
-* Precondiciones:Usuario registrado e identificado,Agenda del medico disponible
-* Poscondiciones:Turno asignado y confirmado
-* Suposiciones:El sistema tiene conexion estable con la base de datos de turno
+* **Precondiciones:** Usuario registrado e identificado,Agenda del medico disponible
+* **Poscondiciones:** Turno asignado y confirmado
+* **Suposiciones:** El sistema tiene conexion estable con la base de datos de turno
 
 
 
@@ -131,9 +131,9 @@ Brinda al paciente la posibilidad de cancelar un turno que ya ha sido reservado,
 
  * El sistema elimina el turno y libera el horario en la agenda del médico.
 ### Condiciones
-* Precondiciones:El turno debe existir y ser cancelable (no vencido)
-* Poscondiciones:Turno eliminado del sistema,Agenda liberada
-* Suposiciones:El turno no esta dentro del periodo de cancelacion restringida
+* **Precondiciones:** El turno debe existir y ser cancelable (no vencido)
+* **Poscondiciones:** Turno eliminado del sistema,Agenda liberada
+* **Suposiciones:** El turno no esta dentro del periodo de cancelacion restringida
 
 
 ![Captura de pantalla 2025-04-10 175123](https://github.com/user-attachments/assets/04d20742-cb5a-4ee9-b8b1-f3e04f915875)
@@ -170,9 +170,9 @@ Funcionalidad automatizada del sistema que se encarga de enviar notificaciones r
 
  * Se envía por los canales configurados (correo electrónico,SMS).
 ### Condiciones
-* Precondiciones:Turno registrado y datos de contacto disponible
-* Poscondiciones:Notificacion enviada
-* Suposiciones:El servicio de mensajeria funciona correctamente
+* **Precondiciones:** Turno registrado y datos de contacto disponible
+* **Poscondiciones:** Notificacion enviada
+* **Suposiciones:** El servicio de mensajeria funciona correctamente
 
 ![Captura de pantalla 2025-04-10 174127](https://github.com/user-attachments/assets/e8aa3461-0a5c-4594-81ed-c6fffe9d3bbb)
 
