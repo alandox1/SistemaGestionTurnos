@@ -1,4 +1,4 @@
-## Sistema de Gestión de Turnos
+# Sistema de Gestión de Turnos
 
 Este proyecto es un sistema de gestión de turnos para un pequeño centro de salud,basado en el paradigma de Programación Orientada a Objetos (POO).
 
