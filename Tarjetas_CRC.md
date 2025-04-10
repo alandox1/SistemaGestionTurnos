@@ -1,5 +1,3 @@
-# Herramientas Agile
-
 ## Tarjetas CRC
 Las Tarjetas CRC (Clase-Responsabilidad-Colaboración) constituyen una
 herramienta esencial en el enfoque de la programación orientada a objetos (POO). Se
