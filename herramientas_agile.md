@@ -36,10 +36,10 @@ Quiero recordar mis turnos anteriores.
 
 **Pensamiento del objeto:** Atiendo pacientes en los horarios asignados. Necesito ver mi agenda, registrar observaciones y diagnósticos. Puedo modificar turnos si es necesario. Quiero acceder al historial de consultas de mis pacientes.
 
-**Responsabilidades:** Visualizar y gestionar su agenda de turnos,Registrar diagnósticos y observaciones médicas,Acceder al historial clínico de sus pacientes,Modificar o cancelar turnos ,Consultar disponibilidad para nuevos turnos
+**Responsabilidades:** Visualizar y gestionar su agenda de turnos,Registrar diagnósticos y observaciones médicas,Acceder al historial clínico de sus pacientes,Modificar o cancelar turnos ,Consultar disponibilidad para nuevos turnos,Quiero recordar turnos.
 
 **Colaboradores:** Turno,Paciente,HistoriaClinica,Agenda
-.
+
 **Propiedad a la que se referenciará:**
 nombre, apellido, especialidad, matriculaProfesional, horariosAtencion
 
