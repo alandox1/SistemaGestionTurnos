@@ -1,5 +1,5 @@
 # Diagramas UML
-se presentaran los diagramas de casos de uso para el sistema de gestión de turnos médicos.
+se presentaran los diagramas de casos de uso para el sistema de gestión de turnos médicos,ademas del diagrama UML.
 ## Diagramas de Casos de Uso
 
 ### Diagrama UML
