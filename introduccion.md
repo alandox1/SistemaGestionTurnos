@@ -113,7 +113,7 @@ Si saluda a un niño: “¡Hola!”
 
 ## Casos de Usos
 
-1. Nombre del caso de uso: Registrar nuevo paciente
+1. **Nombre del caso de uso:** Registrar nuevo paciente
    
 **Actor(es) involucrado(s):** Paciente
 
