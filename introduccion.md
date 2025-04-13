@@ -133,6 +133,7 @@ Si son válidos, el sistema crea un perfil de paciente.
 
 **Postcondiciones:** El paciente queda registrado y puede iniciar sesión para solicitar turnos.
 
+
 2. **Nombre del caso de uso:** Iniciar sesión en el sistema
 
 **Actor(es) involucrado(s):** Paciente, Médico, Administrador
@@ -152,6 +153,7 @@ Si son correctas, el sistema permite el acceso según el perfil (paciente, médi
 **Precondiciones:** El usuario debe estar registrado.
 
 **Postcondiciones:** El usuario accede al sistema con los permisos correspondientes.
+
 
 3. **Nombre del caso de uso:** Solicitar turno médico
    
@@ -175,6 +177,7 @@ El sistema confirma la reserva del turno.
 
 **Postcondiciones:** El turno queda reservado y asociado al paciente y al médico correspondiente.
 
+
 4. **Nombre del caso de uso:** Cancelar turno
    
 **Actor(es) involucrado(s):** Paciente
@@ -194,6 +197,7 @@ El sistema elimina el turno y lo libera para otros pacientes.
 **Precondiciones:** El paciente debe haber reservado un turno previamente.
 
 **Postcondiciones:** El turno se libera y queda disponible en el sistema.
+
 
 5. **Nombre del caso de uso:** Registrar atención médica
    
