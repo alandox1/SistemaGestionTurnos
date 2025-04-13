@@ -99,7 +99,7 @@ Si saluda a un niño: “¡Hola!”
 
 [ Saludo a niño ] → “¡Hola!”
 
-Requisitos iniciales del sistema
+### Requisitos iniciales del sistema
 
 **Registro de usuarios:** El sistema debe permitir la creación y gestión de usuarios.
 
