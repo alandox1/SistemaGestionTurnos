@@ -4,7 +4,7 @@
 Este caso de uso permite ingresar al sistema los datos personales de un nuevo paciente, como nombre, DNI, contacto y obra social. Es esencial para poder luego asignar turnos médicos y llevar un historial clínico.
 ![Registrar-CasoUso1](https://github.com/user-attachments/assets/f1dceff3-1ee3-4489-8430-5f815b32797e)
 
-[Registrar nuevo paciente](https://drive.google.com/file/d/1CcOZ7rSeHB44h25CePTSYDyZI-MY9x3h/view?usp=sharing)
+*[Registrar nuevo paciente](https://drive.google.com/file/d/1CcOZ7rSeHB44h25CePTSYDyZI-MY9x3h/view?usp=sharing)
 
 ### Diagrama de Casos de Uso 2:Iniciar sesion en el sistema
 Permite a los usuarios registrados acceder al sistema utilizando sus credenciales, para utilizar las funciones correspondientes a su perfil (pedir turno, consultar agenda, etc.).
