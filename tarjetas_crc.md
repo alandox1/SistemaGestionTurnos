@@ -21,7 +21,8 @@ Quiero recordar mis turnos anteriores.
 
 **Propiedad:** nombre, apellido, fechaNacimiento, DNI, direccion,telefono,email.
 
-![Captura de pantalla 2025-04-09 230123](https://github.com/user-attachments/assets/5e61f527-e456-481e-9d38-5e99d1d11460)
+![Captura de pantalla 2025-04-21 143537](https://github.com/user-attachments/assets/c451b238-8081-4d05-96f9-27afa8450291)
+
 
 ### Tarjeta CRC: Médico
 
@@ -38,9 +39,10 @@ Quiero recordar mis turnos anteriores.
 **Colaboradores:** Turno,Paciente,HistoriaClinica,Agenda
 
 **Propiedad a la que se referenciará:**
-nombre, apellido, especialidad, matriculaProfesional, horariosAtencion
+nombre, apellido, especialidad, matricula, horariosAtencion
 
-![Captura de pantalla 2025-04-09 230223](https://github.com/user-attachments/assets/93de00cf-130c-416d-af0a-e07e3c8eb282)
+
+![Captura de pantalla 2025-04-21 143544](https://github.com/user-attachments/assets/90bddab9-6c66-4cc4-bced-d8de16c1cf31)
 
 
 
@@ -58,11 +60,12 @@ Me encargo de la gestión de la agenda. Registro nuevos pacientes.organizo turno
 **Responsabilidades:** Registrar nuevos pacientes en el sistema,Asignar turnos a pacientes,Cancelar o reprogramar turnos,Consultar agenda de médicos,Consultar los datos o actualizar de un paciente.
 
 
-**Colaboradores:** Paciente,Turno,Agenda,Médico
+**Colaboradores:** Paciente,Turno,Agenda,Médico,recepcionista
 
-**Propiedad**:nombre,apellido,dni,email,telefono,turno.
+**Propiedad**:nombre,apellido,dni,email,telefono,direccion
 
-![Captura de pantalla 2025-04-09 230838](https://github.com/user-attachments/assets/5db1f615-5b32-4e0b-9628-459238a7c942)
+![Captura de pantalla 2025-04-21 143551](https://github.com/user-attachments/assets/eda178b8-63a0-4bbf-a609-8c4d89f2b973)
+
 
 
 ### Tarjeta CRC: Turno
@@ -82,9 +85,7 @@ Me encargo de la gestión de la agenda. Registro nuevos pacientes.organizo turno
 **Propiedad:** fecha, hora, estado, paciente,motivoCancelacion.
 
 
-![Captura de pantalla 2025-04-09 231310](https://github.com/user-attachments/assets/3d6c55ed-fe45-4fa3-a718-17ac98fade05)
-
-
+![Captura de pantalla 2025-04-09 225917](https://github.com/user-attachments/assets/47206eef-9b7f-41b0-b03b-3728cd20f0ec)
 
 ### Tarjeta CRC: Agenda
 
@@ -105,6 +106,8 @@ Me encargo de la gestión de la agenda. Registro nuevos pacientes.organizo turno
 
 ![Captura de pantalla 2025-04-09 225817](https://github.com/user-attachments/assets/f49b1418-e2e0-4917-93b5-72d138691247)
 
+
+* [Tarjetas CRC](https://drive.google.com/file/d/1u_hI6YER85QZzXQFLu4y4vB0H0hHy3-j/view?usp=sharing)
 
 
 
