@@ -1,4 +1,11 @@
-![Diagrama sin  drawio](https://github.com/user-attachments/assets/f637fbd3-9f31-4250-8ac0-781faaf13498)
+# Sistema de Gestion de Turnos - Diseño del Sistema
+Diaz Alan
+
+Diseño orientado a objetos - Tecnicatura en programacion
+
+Lic. Matias Velasquez
+
+2025
 
 
 # Introduccion
