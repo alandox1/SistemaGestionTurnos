@@ -16,6 +16,6 @@ Este proyecto es un sistema de gestión de turnos para un pequeño centro de sal
 # Diagramas y Diseños  
 * [Anexos](anexos.md)
 * [Diagramas UML](diagramas_uml.md)
-* [Herramientas Agile](Herramientas_Agile.md)
+* [Herramientas Agile](herramientas_agile.md)
 
   
