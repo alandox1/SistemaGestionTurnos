@@ -17,9 +17,9 @@ Quiero recordar mis turnos anteriores.
 
 **Responsabilidades:** Solicitar un turno, Consultar sus turnos programados, Cancelar un turno, Actualizar sus datos personales, Ver el historial de sus consultas.
 
-**Colaboradores:** Agenda, Turno, Médico.
+**Colaboradores:** Agenda, Turno, Médico,recepcionista.
 
-**Propiedad:** nombre, apellido, fechaNacimiento, DNI, numeroHistoriaClinica.
+**Propiedad:** nombre, apellido, fechaNacimiento, DNI, direccion,telefono,email.
 
 ![Captura de pantalla 2025-04-09 230123](https://github.com/user-attachments/assets/5e61f527-e456-481e-9d38-5e99d1d11460)
 
@@ -33,7 +33,7 @@ Quiero recordar mis turnos anteriores.
 
 **Pensamiento del objeto:** Quiero recordar turnos. Necesito ver mi agenda, registrar observaciones y diagnósticos. Puedo modificar turnos si es necesario. Quiero acceder al historial de consultas de mis pacientes.
 
-**Responsabilidades:** Visualizar y gestionar su agenda de turnos,Registrar diagnósticos y observaciones médicas,Acceder al historial clínico de sus pacientes,Modificar o cancelar turnos ,Consultar disponibilidad para nuevos turnos,Quiero recordar turnos.
+**Responsabilidades:** Visualizar y gestionar su agenda de turnos,Registrar diagnósticos y observaciones médicas,Acceder al historial clínico de sus pacientes,Modificar o cancelar turnos.
 
 **Colaboradores:** Turno,Paciente,HistoriaClinica,Agenda
 
