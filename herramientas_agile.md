@@ -1,2 +1,2 @@
 # Herramientas Agile
-* [Tarjetas CRC](Tarjetas_CRC.md)
+* [Tarjetas CRC](tarjetas_crc.md)
