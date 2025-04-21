@@ -33,7 +33,7 @@ Permite que un nuevo usuario se registre en el sistema proporcionando sus datos 
 * **Poscondiciones:** Usuario registrado y habilitado para iniciar sesion
 * **Suposiciones:** El formulario esta correctamente validado.
 
-[Enlace del Escenario](https://drive.google.com/file/d/1j0doeWnuMsGsl4PqhQ7tWTcx_9a1vFtB/view?usp=sharing)
+* [Enlace del Escenario](https://drive.google.com/file/d/1j0doeWnuMsGsl4PqhQ7tWTcx_9a1vFtB/view?usp=sharing)
 
 ## Caso de uso 2 - Iniciar sesion
 ### Descripcion General:
@@ -60,7 +60,7 @@ Permite a los usuarios del sistema (pacientes, médicos o administradores) acced
 * **Poscondiciones:** acceso permitido o denegado segun resultado
 * **Suposiciones:** Los datos estan correctamente almacenados.
 
-[Enlace del Escenario](https://drive.google.com/file/d/1v-gOTcCT2iERNwYh5sB2k9Jy7grlCW9s/view?usp=sharing)
+* [Enlace del Escenario](https://drive.google.com/file/d/1v-gOTcCT2iERNwYh5sB2k9Jy7grlCW9s/view?usp=sharing)
 
 ## Caso de uso 3 - Solicitar Turno Medico
 
@@ -95,7 +95,7 @@ Permite a los pacientes registrados en el sistema seleccionar una especialidad m
 * **Poscondiciones:** Turno asignado y confirmado
 * **Suposiciones:** El sistema tiene conexion estable con la base de datos de turno
 
-[Enlace del Escenario](https://drive.google.com/file/d/1zacd-2sNYMeJ1r95mwzLyhNp1tMmyg5k/view?usp=sharing)
+* [Enlace del Escenario](https://drive.google.com/file/d/1zacd-2sNYMeJ1r95mwzLyhNp1tMmyg5k/view?usp=sharing)
 
 ## Caso de uso 4 - Cancelar Turno Medico
 
@@ -126,7 +126,7 @@ Brinda al paciente la posibilidad de cancelar un turno que ya ha sido reservado,
 * **Poscondiciones:** Turno eliminado del sistema,Agenda liberada
 * **Suposiciones:** El turno no esta dentro del periodo de cancelacion restringida
 
-[Enlace del Escenario](https://drive.google.com/file/d/1FIO6ylXUcQnJ19nbvHQzxxEdevsmMKcl/view?usp=sharing)
+* [Enlace del Escenario](https://drive.google.com/file/d/1FIO6ylXUcQnJ19nbvHQzxxEdevsmMKcl/view?usp=sharing)
 
 
 ## Caso de uso 5 - Notificar Recordatorio de Turno
@@ -161,4 +161,4 @@ Funcionalidad automatizada del sistema que se encarga de enviar notificaciones r
 * **Poscondiciones:** Notificacion enviada
 * **Suposiciones:** El servicio de mensajeria funciona correctamente
 
-[Enlace del Escenario](https://drive.google.com/file/d/1e-lRHBjN39gbGlCuGKJeTsT5sLoyy8Nx/view?usp=sharing)
+* [Enlace del Escenario](https://drive.google.com/file/d/1e-lRHBjN39gbGlCuGKJeTsT5sLoyy8Nx/view?usp=sharing)
