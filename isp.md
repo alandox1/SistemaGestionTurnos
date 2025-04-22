@@ -11,3 +11,10 @@ Para aplicar este principio, se dividieron las grandes estructuras en interfaces
 Ejemplo del mundo real
 
 Imaginá que un médico solo necesita una hoja con el nombre del paciente y la hora del turno. Pero en lugar de eso, le dan un formulario de diez páginas con información financiera, datos de otros pacientes y estadísticas de la clínica. No solo pierde tiempo, sino que corre el riesgo de confundirse. En cambio, si cada profesional recibe solo la información que necesita, puede trabajar mejor y con menos errores. Eso es exactamente lo que propone este principio: darle a cada parte del sistema solo lo que realmente va a usar.
+
+## Estructura de Clases
+
+![SolidISP](https://github.com/user-attachments/assets/c69ac19e-eb84-49e3-b9b4-4f1de05eaac8)
+
+[Estructura de Clases](https://drive.google.com/file/d/10YVFEO_VDqeF7pl-suyfbp-3p_uWsVUx/view?usp=sharing)
+
