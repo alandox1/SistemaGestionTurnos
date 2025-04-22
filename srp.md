@@ -21,6 +21,8 @@ maginemos un recepcionista en una clínica que tiene que hacer todo él solo: at
 
 ![SOlidSRP](https://github.com/user-attachments/assets/3369e582-9f8b-46ee-a5a6-94e13297db28)
 
+[SRP](https://drive.google.com/file/d/1NeYnCmD961EI0dn7QElEFSHMGuGgTcYh/view?usp=sharing)
+
 
 
 
