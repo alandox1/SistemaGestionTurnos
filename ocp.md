@@ -1,14 +1,15 @@
 # Principio de Abierto/Cerrado (OCP)
 El objetivo principal del Principio de Abierto/Cerrado es permitir que el software sea extensible para nuevas funcionalidades sin necesidad de modificar su código ya existente.
-Busca crear sistemas que puedan crecer y adaptarse a nuevos requerimientos sin alterar la base de código que ya funciona.Si cada vez que necesitas agregar una nueva funcionalidad a tu software tienes que cambiar el código existente, introduces riesgos de errores, 
-aumentas la complejidad y dificultas el mantenimiento.El Principio de Abierto/Cerrado resuelve esto permitiendo extender la funcionalidad de tu software sin necesidad de modificar el código que ya funciona. Esto se logra creando abstracciones que definen un comportamiento general, y luego implementando nuevas funcionalidades
-## Motivacion
-Uno de los principales problemas que enfrentaba el sistema de gestión de turnos médicos era su dificultad para adaptarse a nuevos requerimientos sin alterar partes del código que ya estaban funcionando. Un ejemplo claro de esta situación se daba en el módulo de notificaciones. Inicialmente, la lógica de envío de notificaciones
-estaba centralizada en una única clase, donde se usaban múltiples estructuras condicionales para determinar si se debía enviar un correo electrónico, un mensaje de texto (SMS) o realizar una llamada automatizada.
-Este principio establece que las clases deben estar abiertas para su extensión, pero cerradas para su modificación. Es decir, un sistema bien diseñado debería permitir agregar nuevas funcionalidades sin tener que cambiar el código ya existente.
+En el sistema de gestión de turnos médicos, la funcionalidad de notificaciones estaba diseñada de forma rígida. Toda la lógica para enviar correos, mensajes de texto o llamadas estaba dentro de una misma estructura. Cada vez que se necesitaba agregar un nuevo tipo de notificación (como WhatsApp o notificaciones móviles), era necesario modificar directamente el código existente. Esto generaba errores, rompía funcionalidades previas y complicaba el mantenimiento del sistema.
 
-Al aplicar este principio al módulo de notificaciones, se rediseñó la estructura para trabajar con una interfaz común, que define el comportamiento esperado para cualquier tipo de notificador.
-A partir de esta interfaz, se pueden crear múltiples clases concretas —como NotificadorEmail, NotificadorSMS o NotificadorWhatsApp—, cada una con su propia lógica de envío.
+El principio OCP propone que el sistema debe estar abierto para extenderse, pero cerrado para ser modificado. Es decir, debería poder agregarse una nueva funcionalidad (como un nuevo tipo de notificación) sin tocar el código que ya funciona. Para lograrlo, se reorganizó la lógica en componentes independientes, donde cada tipo de notificación tiene su propia estructura. Así, si se quiere añadir otro canal de aviso, se hace como una extensión, sin afectar lo anterior. Esto vuelve al sistema más flexible, seguro y preparado para el cambio.
+
+## Motivacion
+En el sistema de gestión de turnos médicos, uno de los problemas más comunes aparecía cuando se necesitaba incorporar nuevas funcionalidades, como agregar distintos tipos de notificaciones para pacientes y médicos. Al principio, el sistema solo enviaba correos electrónicos, pero pronto se quiso sumar mensajes de texto, notificaciones móviles y otros canales.
+
+El inconveniente era que cada vez que se agregaba una nueva forma de notificación, había que modificar el funcionamiento ya existente. Esto traía consigo varios problemas: podían aparecer errores en las funciones que ya estaban probadas, se volvía más difícil realizar pruebas, y el sistema se hacía cada vez más frágil y complejo.
+
+El principio de abierto/cerrado (OCP) propone una solución clara: que los sistemas estén abiertos para ser extendidos, es decir, para agregar nuevas funciones, pero cerrados para su modificación interna. En otras palabras, no hay que tocar lo que ya funciona; en su lugar, se debe añadir lo nuevo como una pieza que se conecta al sistema.
 
 Ejemplo del mundo real
 
