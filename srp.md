@@ -3,28 +3,18 @@
 El Principio de Responsabilidad Única (Single Responsibility Principle, SRP) tiene como propósito asegurar que una clase tenga una sola razón para cambiar. 
 Esto significa que una clase debe tener una única responsabilidad y que todas sus funciones deben estar relacionadas con esa responsabilidad.
 
-El problema que aborda el SRP es el acoplamiento excesivo y la falta de cohesión 
-en las clases. Cuando una clase tiene múltiples responsabilidades, cualquier cambio en una de esas responsabilidades puede afectar a otras partes del sistema.
-Esto hace que el código sea más difícil de mantener, entender y modificar.
+En el sistema de gestión de turnos médicos, había componentes que mezclaban varias responsabilidades en una sola unidad. Por ejemplo, una parte del sistema se encargaba al mismo tiempo de gestionar los turnos, validar la disponibilidad médica, notificar al paciente y registrar la información en la base de datos.
 
-El SRP soluciona este problema al asegurar que cada clase tenga una sola responsabilidad. Al separar las responsabilidades en clases diferentes, 
-se reduce el acoplamiento entre las clases y se facilita la reutilización del código. Esto hace que el código sea más modular y fácil de mantener.
+El principio de responsabilidad única propone separar esas funciones en partes independientes, donde cada una se ocupe de una sola cosa: una se encarga de crear turnos, otra de validar horarios, otra de enviar notificaciones y otra de guardar la información.
 
 ## Motivacion
-El problema que aborda el SRP es el acoplamiento excesivo y la falta de cohesión en las clases. Cuando una clase tiene múltiples responsabilidades, cualquier cambio en una de esas responsabilidades puede afectar a otras partes del sistema.
-Esto hace que el código sea más difícil de mantener, entender y modificar. Además, el acoplamiento excesivo puede llevar a la propagación de errores y a una mayor complejidad en el sistema.
+Uno de los grandes problemas que enfrentaba el sistema de gestión de turnos médicos era que varios componentes realizaban demasiadas tareas a la vez. Por ejemplo, había una única unidad del sistema que al mismo tiempo se encargaba de registrar un nuevo turno, validar si el médico estaba disponible, enviarle la notificación al paciente, y también guardar toda esa información en la base de datos. Esta concentración de funciones en una sola parte del sistema generaba varios inconvenientes: el código era difícil de entender, cualquier cambio afectaba a todo lo demás, y los errores eran más difíciles de localizar y corregir.
 
-El SRP soluciona este problema al asegurar que cada clase tenga una sola responsabilidad. Al separar las responsabilidades en clases diferentes,
-se reduce el acoplamiento entre las clases y se facilita la reutilización del código. Esto hace que el código sea más modular y fácil de mantener.Además, al tener clases con una única responsabilidad,
-los cambios en una clase no afectan a otras partes del sistema, lo que reduce el riesgo de introducir errores
+Al aplicar este principio en el sistema, se tomó la decisión de dividir esas funciones en componentes separados. Se creó una parte del sistema exclusivamente dedicada a generar turnos, otra que valida disponibilidad, otra que se encarga de enviar notificaciones, y otra que guarda la información. De esta manera, cada módulo se puede desarrollar, modificar o corregir sin afectar a los demás. Esto no solo mejora el orden del sistema, sino que también reduce errores, facilita el mantenimiento y permite escalar el sistema de forma más segura.
 
-### Ejemplo del mundo real
+Ejemplo del mundo real
 
-maginemos una aplicación de gestión de empleados en una empresa. Inicialmente, tenemos una clase Empleado que maneja tanto los datos personales del empleado como la lógica de cálculo de salarios y 
-la generación de informes de desempeño. Esta clase tiene múltiples responsabilidades, lo que hace que sea difícil de mantener y entender.
-
-Para aplicar el SRP, podemos separar las responsabilidades en tres clases diferentes: Empleado, CalculadoraDeSalarios y GeneradorDeInformes. La clase Empleado manejará solo los atributos y comportamientos relacionados con los datos personales del empleado.
-La clase CalculadoraDeSalarios gestionará la lógica de cálculo de salarios, y la clase GeneradorDeInformes manejará la generación de informes de desempeño. 
+maginemos un recepcionista en una clínica que tiene que hacer todo él solo: atiende a los pacientes, agenda los turnos, envía correos, llama por teléfono, lleva el registro contable y limpia el escritorio. Si hay un cambio en la forma de enviar notificaciones, afecta su rutina completa. Además, si comete un error, es difícil saber en qué tarea ocurrió. En cambio, si cada tarea está asignada a una persona distinta (una para atención, otra para agenda, otra para comunicaciones y otra para limpieza), el trabajo es más organizado, especializado y eficiente. Cada uno sabe exactamente qué hacer y cualquier cambio o mejora se implementa de forma más controlada.
 
 
 
