@@ -15,3 +15,9 @@ Ejemplo del mundo real
 
 Un ejemplo del mundo real sería el de una máquina expendedora diseñada inicialmente para ofrecer solo tres bebidas. Si cada nueva bebida obliga a reprogramar la lógica principal, mantener el sistema se vuelve complejo. Pero si cada bebida funciona como un módulo independiente,
 agregar una nueva es tan simple como conectar una nueva unidad, sin tocar las ya existentes.
+
+## Estructura de Clases
+![SolidOcp](https://github.com/user-attachments/assets/eea940b1-e869-428b-81af-29c67e5bc95d)
+
+[Estructura de clase](https://drive.google.com/file/d/1sqruH8Vnourk0DbKsT75Sikx9F4t8m8o/view?usp=sharing)
+
