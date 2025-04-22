@@ -15,3 +15,10 @@ Para resolver el problema, se reorganizó la forma en que se definían los perfi
 Un ejemplo del mundo real
 
 Imaginemos que en una empresa todos los empleados tienen una tarjeta de acceso. Pero solo los ingenieros pueden entrar al laboratorio. Si se permite que todos los empleados usen la misma tarjeta para cualquier zona, entonces habrá que hacer excepciones cada vez que un empleado sin autorización quiera entrar al laboratorio. En cambio, si desde el principio se asignan accesos específicos según el rol de cada persona, no hace falta estar revisando constantemente quién puede hacer qué. El sistema funciona de forma más ordenada, segura y clara.
+
+## Estructura de Clases
+
+[SolidLSP.pdf](https://github.com/user-attachments/files/19856327/SolidLSP.pdf)
+
+[Estructura de clases](https://drive.google.com/file/d/1-hWIs_TFMcYxppuK0fVU2TL8FWhhg7C0/view?usp=sharing)
+
