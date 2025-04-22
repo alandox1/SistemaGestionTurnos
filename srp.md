@@ -17,7 +17,9 @@ Ejemplo del mundo real
 maginemos un recepcionista en una clínica que tiene que hacer todo él solo: atiende a los pacientes, agenda los turnos, envía correos, llama por teléfono, lleva el registro contable y limpia el escritorio. Si hay un cambio en la forma de enviar notificaciones, afecta su rutina completa. Además, si comete un error, es difícil saber en qué tarea ocurrió. En cambio, si cada tarea está asignada a una persona distinta (una para atención, otra para agenda, otra para comunicaciones y otra para limpieza), el trabajo es más organizado, especializado y eficiente. Cada uno sabe exactamente qué hacer y cualquier cambio o mejora se implementa de forma más controlada.
 
 
+## Estructura de Clases
 
+![SOlidSRP](https://github.com/user-attachments/assets/3369e582-9f8b-46ee-a5a6-94e13297db28)
 
 
 
