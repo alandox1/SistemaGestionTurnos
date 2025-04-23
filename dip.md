@@ -13,3 +13,8 @@ Ejemplo del mundo real
 Imaginemos que una empresa de transporte tiene una aplicación que organiza el envío de productos. La aplicación está directamente conectada a un sistema específico de rastreo de envíos. Si la empresa decide cambiar de proveedor de rastreo, tendría que modificar toda la aplicación para adaptarse a las nuevas herramientas del nuevo proveedor.
 
 Sin embargo, si la aplicación está diseñada para depender de una interfaz común de rastreo (en lugar de depender directamente de un proveedor específico), solo necesitaría cambiar la implementación del proveedor de rastreo sin tocar el resto de la aplicación. Esto permite una gran flexibilidad y agilidad ante cambios, además de reducir los riesgos de errores al modificar solo una pequeña parte del sistema.
+
+
+
+
+
