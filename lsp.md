@@ -18,7 +18,7 @@ Imaginemos que en una empresa todos los empleados tienen una tarjeta de acceso. 
 
 ## Estructura de Clases
 
-[SolidLSP.pdf](https://github.com/user-attachments/files/19856327/SolidLSP.pdf)
+![SolidLSP](https://github.com/user-attachments/assets/a53cca7c-d3b4-427a-8bb5-3cf5c3dd4947)
 
 [Estructura de clases](https://drive.google.com/file/d/1-hWIs_TFMcYxppuK0fVU2TL8FWhhg7C0/view?usp=sharing)
 
