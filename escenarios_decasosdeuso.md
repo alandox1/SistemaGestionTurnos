@@ -400,11 +400,11 @@ Descripción: El paciente intenta solicitar un turno médico, pero el turno sele
 
 ### Condiciones
 
-Precondiciones: El paciente tiene acceso a internet y está registrado en el sistema.
+* Precondiciones: El paciente tiene acceso a internet y está registrado en el sistema.
 
-Postcondiciones: El paciente recibe un mensaje de error y no se reserva el turno.
+* Postcondiciones: El paciente recibe un mensaje de error y no se reserva el turno.
 
-Suposiciones: El turno seleccionado no está disponible.
+* Suposiciones: El turno seleccionado no está disponible.
 
 Prioridad:Media
 
@@ -445,63 +445,210 @@ Descripción: El paciente intenta solicitar un turno médico con datos personale
 ### Descripcion General:
 Brinda al paciente la posibilidad de cancelar un turno que ya ha sido reservado, siempre que esté dentro del plazo permitido por la institución médica. Esta opción permite liberar espacios en la agenda médica, favoreciendo la reprogramación de otros pacientes y optimizando el uso del tiempo profesional.
 ## Pasos desempeñados(Ruta Principal)
-1.El paciente inicia sesion
+1.El paciente accede a la plataforma de turnos médicos.
 
- * El paciente accede a su cuenta personal.
+ * El paciente puede acceder desde una computadora o teléfono
 
-2.Ingresa a "Mis Turnos"
+2.El paciente selecciona la opción "Cancelar Turno Médico".
 
- * Desde el menú principal, elige la sección donde visualiza sus turnos agendados.
+ * La opción debe estar visible en el menú de gestión de turnos.
 
-3.Selecciona un turno vigente
+3.El paciente visualiza la lista de turnos activos.
 
- * El paciente identifica el turno que desea cancelar y lo selecciona.
+ * El sistema muestra los turnos futuros del paciente.
 
-4.Confirma la cancelacion
+4.El paciente selecciona el turno que desea cancelar
 
- * El sistema solicita una confirmación para evitar errores.
+ * Cada turno incluye detalles como fecha, hora y médico.
 
-5.El sistema elimina el turno y actualiza la agenda
+5.El sistema solicita confirmación de cancelación.
 
- * El sistema elimina el turno y libera el horario en la agenda del médico.
+ * Se muestra un mensaje de advertencia y confirmación.
+
+6.El paciente confirma la cancelación del turno.
+ *  El paciente acepta la cancelación.
+
+7.El sistema actualiza el estado del turno a "Cancelado".
+ * El sistema registra que el turno ha sido cancelado por el paciente.
+
+8.El sistema libera el horario del turno cancelado.
+ * El horario queda disponible para otros pacientes.
+
 ### Condiciones
-* **Precondiciones:** El turno debe existir y ser cancelable (no vencido)
-* **Poscondiciones:** Turno eliminado del sistema,Agenda liberada
-* **Suposiciones:** El turno no esta dentro del periodo de cancelacion restringida
+* Precondiciones: El paciente debe tener al menos un turno activo en el sistema.
+* Poscondiciones:El turno queda cancelado y el horario disponible para otros usuarios.
+* Suposiciones: El paciente realiza la cancelación con la antelación requerida por la política del sistema (por ejemplo, 24h).
 
-* [Enlace del Escenario](https://drive.google.com/file/d/1FIO6ylXUcQnJ19nbvHQzxxEdevsmMKcl/view?usp=sharing)
+Prioridad:Alta
+
+Riesgo:Bajo
+
+## Escenario 1:Cancelar Turno Médico - Cancelación exitosa
+Descripcion:El paciente accede al sistema y selecciona "Cancelar Turno Medico"
+
+### Pasos desempeñados
+1.El paciente accede a la plataforma de turnos médicos.
+ * El paciente accede desde su dispositivo a la plataforma.
+
+2.El paciente selecciona la opción "Cancelar Turno Médico".
+ * La opción debe estar disponible junto a cada turno.
+
+3.El sistema solicita confirmación.
+ * El sistema previene cancelaciones accidentales.
+
+4.El paciente confirma la cancelación.
+ * El paciente confirma que desea cancelar el turno.
+
+5.El sistema actualiza el estado del turno.
+ * El sistema registra el turno como "cancelado".
+
+6.El sistema libera el horario.
+ * El turno queda disponible para otros pacientes.
+
+7.El médico es notificado.
+ * El sistema avisa al profesional médico.
+
+8.El paciente recibe una confirmación.
+ * El sistema notifica al paciente.
+
+### Condiciones
+* Precondiciones:El paciente tiene al menos un turno activo y acceso a internet.
+* Postcondiciones:El turno se cancela, queda libre para nuevos pacientes y el médico es notificado.
+* Suposiciones: El turno está dentro del plazo permitido para cancelar (por ejemplo, más de 24 horas antes).
+
+Prioridad:Alto
+Riesgo:Bajo
+
+## Escenario 2:Cancelar Turno Médico - Cancelación fuera de plazo
+Descripción: El paciente intenta cancelar un turno dentro del período no permitido (por ejemplo, menos de 24 horas antes).
+
+### Pasos desempeñados
+1.El paciente accede a la plataforma y selecciona un turno para cancelar.
+ * Navega al listado de turnos.
+
+2.El sistema verifica la hora del turno.
+ * El sistema detecta si faltan menos de 24 horas.
+
+3.El sistema bloquea la cancelación.
+ * Muestra mensaje indicando que ya no se puede cancelar online
+
+4.El sistema sugiere contactar con el centro médico
+ * Ofrece un número de teléfono
+
+
+
+### Condiciones
+* Precondiciones:El paciente tiene un turno activo.
+* Postcondiciones:El turno no se cancela automáticamente desde la plataforma.
+* Suposiciones: El sistema impide cancelaciones fuera de plazo.
+
+Prioridad:Media
+
+Riesgo:Medio
+
+
+ [Enlace del Escenario](https://drive.google.com/file/d/1pF1hLiTKPdGpvR7S2GwcTbqhClgDaMka/view?usp=sharing)
 
 
 ## Caso de uso 5 - Notificar Recordatorio de Turno
 ### Descripcion General:
-Funcionalidad automatizada del sistema que se encarga de enviar notificaciones recordatorias a los pacientes con turnos programados en las siguientes 24 o 48 horas. Este recordatorio puede enviarse vía correo electrónico o mensaje SMS, ayudando a reducir el ausentismo y mejorando la eficiencia operativa del centro de salud.
+Permite al sistema enviar recordatorios automáticos de turnos médicos previamente agendados, utilizando medios como correo electrónico, SMS o notificaciones móviles.
 ## Pasos desempeñados(Ruta Principal)
-1.El sistema ejecuta una tarea programada
+1.El sistema escanea la base de datos en busca de turnos próximos.
 
- * El sistema ejecuta automáticamente una función diaria
+ * El sistema identifica todos los turnos con fechas dentro del umbral configurado.
 
-2.Consulta la base de datos de turnos
+2.El sistema valida los datos de contacto del paciente.
 
- * accede a los turnos del dia siguiente
+ * Verifica que el paciente tenga correo electrónico, teléfono u otra vía disponible.
 
-3.Identifica turnos programados dentro de las proximas 24-48 horas.
+3.El sistema genera el contenido del mensaje de recordatorio.
 
- * Revisa los turnos programados para las próximas 24 a 48 horas.
+ * El mensaje incluye fecha, hora, tipo de consulta y médico asignado.
 
-4.Verifica que el paciente tenga datos de contactos validos
+4.El sistema selecciona el canal de envío configurado por el paciente.
 
- * Se asegura de que el paciente tenga un correo o número válido.
+ * Según preferencia del paciente (email, SMS, app).
 
-5.Genera el contenido del mensaje recordatorio
+5.El sistema envía el recordatorio.
 
- * El sistema arma el contenido con nombre del médico, especialidad, fecha y hora.
+ * Se realiza el envío por el canal correspondiente.
 
-6.Envia la notificacion por el medio configurado(correo/sms)
+6.El sistema registra el envío en el historial del paciente.
 
- * Se envía por los canales configurados (correo electrónico,SMS).
+ * Guarda la hora, canal y estado del envío.
 ### Condiciones
-* **Precondiciones:** Turno registrado y datos de contacto disponible
-* **Poscondiciones:** Notificacion enviada
-* **Suposiciones:** El servicio de mensajeria funciona correctamente
+* Precondiciones: El paciente tiene al menos un turno programado en el sistema.
+* Poscondiciones: El paciente recibe un recordatorio con los detalles del turno.
+* Suposiciones: El sistema está funcionando correctamente y el servicio de mensajería está activo.
 
-* [Enlace del Escenario](https://drive.google.com/file/d/1e-lRHBjN39gbGlCuGKJeTsT5sLoyy8Nx/view?usp=sharing)
+Prioridad:Alta
+Riesgo:Baja
+
+## Escenario 1:Notificación enviada con éxito
+Descripción: El sistema detecta un turno próximo y envía el recordatorio sin inconvenientes.
+
+### Pasos desempeñados
+1.El sistema detecta un turno próximo.
+ * Se ejecuta una búsqueda automatizada de turnos dentro del período configurado (ej. 24-48h).
+
+2.El sistema valida los datos del paciente.
+ * Verifica que el paciente tenga medios válidos de contacto.
+
+3.El sistema genera el mensaje.
+ * Se utiliza una plantilla con los detalles del turno.
+
+4.El sistema envía el mensaje.
+ * El mensaje se envía por el canal preferido del paciente.
+
+5.El sistema registra el envío.
+ * Se guarda la operación con sello de tiempo y estado del envío.
+
+### Condiciones
+* Precondiciones:El paciente tiene un turno confirmado dentro del plazo de aviso configurado.
+* Postcondiciones:El paciente recibe la notificación del turno
+* Suposiciones:El servicio de notificaciones funciona correctamente.
+
+Prioridad:Alta
+
+Riesgo:Baja
+
+## Escenario 2:Falla en el envío del recordatorio
+Descripción: El sistema detecta un turno próximo y genera el mensaje correctamente, pero ocurre un error técnico durante el intento de envío del recordatorio.
+
+### Pasos desempeñados
+1.El sistema detecta un turno próximo.
+ * Se activa el proceso programado para buscar turnos cercanos.
+
+
+2.El sistema valida los datos del paciente.
+ * Verifica si el paciente tiene medios válidos de contacto.
+
+
+3.El sistema genera el mensaje.
+ * Se compone el texto del recordatorio con los datos del turno.
+
+
+4.El sistema intenta enviar el mensaje.
+ * El mensaje se canaliza al proveedor (email, SMS, push).
+
+
+
+5.El envío falla.
+ * El sistema detecta que no pudo completar el envío (error de red, error del servidor, tiempo de espera agotado).
+
+
+6.El sistema registra el fallo en el historial.
+ * Se guarda el evento como fallido, con el motivo del error.
+
+### Condiciones
+* Precondiciones:El paciente tiene un turno y un canal de notificación válido.
+* Postcondiciones:No se entrega el mensaje. El sistema puede intentar un reenvío o dejarlo registrado.
+* Suposiciones:Falla momentánea del servidor de envíos.
+
+Prioridad:Media
+
+Riesgo:Medio
+
+
+[Enlace del Escenario](https://drive.google.com/file/d/1pIKxRgHVAE6OwdnHBCwb27edqs4g69u2/view?usp=sharing)
