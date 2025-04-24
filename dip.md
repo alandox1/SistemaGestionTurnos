@@ -15,6 +15,7 @@ Imaginemos que una empresa de transporte tiene una aplicación que organiza el e
 Sin embargo, si la aplicación está diseñada para depender de una interfaz común de rastreo (en lugar de depender directamente de un proveedor específico), solo necesitaría cambiar la implementación del proveedor de rastreo sin tocar el resto de la aplicación. Esto permite una gran flexibilidad y agilidad ante cambios, además de reducir los riesgos de errores al modificar solo una pequeña parte del sistema.
 
 
+![Diagram 2025-04-23 21-06-29](https://github.com/user-attachments/assets/31035188-c1dd-4c53-b39d-6c3862ca0357)
 
-
+[Diagrama](https://drive.google.com/file/d/1ydUDaQ-p0jeKEhjUnK_mlX3t2s_vSzKJ/view?usp=sharing)
 
