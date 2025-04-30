@@ -14,7 +14,8 @@ Imaginá que un médico solo necesita una hoja con el nombre del paciente y la h
 
 ## Estructura de Clases
 
-![SolidISP](https://github.com/user-attachments/assets/c69ac19e-eb84-49e3-b9b4-4f1de05eaac8)
+![Diagram 2025-04-30 18-26-20](https://github.com/user-attachments/assets/03abb416-2d41-4b9e-b4e8-dd847099596d)
 
-[Estructura de Clases](https://drive.google.com/file/d/10YVFEO_VDqeF7pl-suyfbp-3p_uWsVUx/view?usp=sharing)
+
+[Estructura de Clases](https://drive.google.com/file/d/1nTNB1vLc0rVUFabP6wzG-mnv-7h8hgIn/view?usp=sharing)
 
