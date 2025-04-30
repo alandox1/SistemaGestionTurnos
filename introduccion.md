@@ -223,10 +223,11 @@ Guarda la información en la historia clínica del paciente.
 ## Boceto inicial del Diseño de Clases
 
 
-![BocetoDiseñodeclases](https://github.com/user-attachments/assets/ab6fccfe-be0a-4f40-911f-73bcac92eec1)
+![Boceto inicial](https://github.com/user-attachments/assets/d08f50ab-2221-4e31-ab73-4a7e01f6c249)
 
 
-[Enlace del Boceto](https://drive.google.com/file/d/1AGTLqMiX6ThUy_enTLA-AHlU4DWAv7vd/view?usp=drive_link)
+
+[Enlace del Boceto](https://drive.google.com/file/d/1Avo_LqyQ_iHKHOH_APBG70v9rjOKQFAF/view?usp=sharing)
 
 
 
