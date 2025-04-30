@@ -76,16 +76,16 @@ Me encargo de la gestión de la agenda. Registro nuevos pacientes.organizo turno
 
 **Subclase:** —
 
-**Pensamiento del objeto:** Tengo una fecha y una hora asignada,se quien me atendera,se a quien debo atender,mi estado puede cambiar segun la accion realizada
+**Pensamiento del objeto:** Represento un espacio de tiempo reservado para la atención de un paciente por un médico,Estoy asociado a una persona que recibirá la atención,Estoy asignado a un profesional de la salud específico,Mi estado indica si la cita está pendiente, confirmada, cancelada o atendida.
 
-**Responsabilidades:** Conocer su fecha y hora, Conocer el paciente asignado, Conocer el médico asignado, Cambiar su estado.
+**Responsabilidades:** Programar un horario específico,Identificar al paciente,Identificar al médico,Registrar el estado.
 
-**Colaboradores:** Paciente, Médico,Recepcionista.
+**Colaboradores:** Paciente, Médico,Recepcionista,Agenda.
 
-**Propiedad:** fecha, hora, estado, paciente,motivoCancelacion.
+**Propiedad:** fechaInicio, horaInicio, fechaFin, horaFin,paciente (ID del paciente),médico (ID del médico),estado.
 
+![Captura de pantalla 2025-04-30 172425](https://github.com/user-attachments/assets/76606215-7c8f-49bd-b1d3-67c8f23d47e0)
 
-![Captura de pantalla 2025-04-09 225917](https://github.com/user-attachments/assets/47206eef-9b7f-41b0-b03b-3728cd20f0ec)
 
 ### Tarjeta CRC: Agenda
 
@@ -107,7 +107,7 @@ Me encargo de la gestión de la agenda. Registro nuevos pacientes.organizo turno
 ![Captura de pantalla 2025-04-09 225817](https://github.com/user-attachments/assets/f49b1418-e2e0-4917-93b5-72d138691247)
 
 
-* [Tarjetas CRC](https://drive.google.com/file/d/1u_hI6YER85QZzXQFLu4y4vB0H0hHy3-j/view?usp=sharing)
+* [Tarjetas CRC](https://drive.google.com/file/d/1dVNKaSPWde2yLGQqWQTHuyY5oxJgoMoH/view?usp=sharing)
 
 
 
