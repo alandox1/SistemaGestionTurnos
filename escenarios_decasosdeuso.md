@@ -3,7 +3,7 @@
 ## Caso de uso 1 - Registrar nuevo paciente
 
 ### Descripcion general
-Permite que un nuevo usuario se registre en el sistema proporcionando sus datos personales y de contacto. Una vez registrado, el paciente obtiene acceso a todas las funcionalidades del sistema, como solicitar turnos, consultar historial, y recibir notificaciones. Este proceso puede incluir validaciones como verificación de correo y control de duplicidad de datos (correo o documento).
+Este caso de uso describe el proceso mediante el cual un nuevo individuo es incorporado al sistema como paciente. El objetivo principal es permitir que una persona cree una cuenta en el sistema, proporcionando la información personal y de contacto.
 
 ## Flujo de eventos
 ### Pasos Desempeñados(ruta principal)
