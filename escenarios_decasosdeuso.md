@@ -10,7 +10,7 @@ Este caso de uso describe el proceso mediante el cual un nuevo individuo es inco
 
 1.El usuario accede a la opcion "Crear Cuenta" 
 
- * Desde la página de inicio, el usuario selecciona esta opción.
+ * El usuario, a través de la interfaz del sistema, localiza y selecciona la opción
 
 2.Ingresa sus datos personales y de contacto
 
@@ -18,21 +18,23 @@ Este caso de uso describe el proceso mediante el cual un nuevo individuo es inco
 
 3.El sistema valida los datos
 
- * El sistema revisa que los campos estén completos y con formato correcto.
+ * Una vez que el usuario envía el formulario, el sistema realiza una serie de comprobaciones automáticas
 
 4.El sistema comprueba que no exista un usuario con el mismo correo o dni
 
- * El sistema revisa que los campos estén completos y con formato correcto.
+ * Después de la validación inicial de los datos, el sistema realiza una consulta a la base de datos de pacientes existente.
 
 5.El sistema registra al nuevo paciente
 
- * Si todo está correcto, se guarda la nueva cuenta.
+ * Si todas las validaciones son exitosas, el sistema procede a crear una nueva entrada en la base de datos de pacientes.
 
 ### Condiciones
 
 * **Precondiciones:** No debe existir una cuenta previo con el mismo correo/DNI
 * **Poscondiciones:** Usuario registrado y habilitado para iniciar sesion
 * **Suposiciones:** El formulario esta correctamente validado.
+
+[Enlace del Escenario](https://drive.google.com/file/d/1WayhlAgg-4emzrAt6pgjwnbDxd40ZHv4/view?usp=sharing)
 
 ## Escenario 1:Registrar Paciente - Registro exitoso de nuevo paciente
 
