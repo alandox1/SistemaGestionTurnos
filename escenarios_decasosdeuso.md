@@ -585,6 +585,7 @@ Permite al sistema enviar recordatorios automáticos de turnos médicos previame
 * Suposiciones: El sistema está funcionando correctamente y el servicio de mensajería está activo.
 
 Prioridad:Alta
+
 Riesgo:Baja
 
 ## Escenario 1:Notificación enviada con éxito
