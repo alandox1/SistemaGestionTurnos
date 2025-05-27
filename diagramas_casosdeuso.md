@@ -1,12 +1,13 @@
 ## Diagramas de Casos de Uso
 
-### Diagrama de Casos de Uso 1:Registrar nuevo paciente
-El diagrama muestra al Paciente iniciando el registro. Este incluye ingresar datos personales, de contacto y de obra social. El Personal Administrativo valida estos datos y crea el perfil del paciente, permitiendo luego asignar turnos y registrar su historial clínico.
+### Diagrama de Casos de Uso 1:Reprogramar Turno
+Este caso de uso permite el recepcionista modificar la fecha y/o hora de un turno médico que ya ha sido previamente agendado.
 
-![Registrar paciente](https://github.com/user-attachments/assets/99c9ba80-5800-4066-bfa5-14a6cd38969c)
+![ReprogramarCasoUso](https://github.com/user-attachments/assets/626d2823-f32d-4e6f-a416-9341c00b528e)
 
 
-* [Registrar nuevo paciente](https://drive.google.com/file/d/1gdkVTjePKaWnWnfs4BGsL5qWOEi8jnTk/view?usp=sharing)
+
+* [Reprogramar Turno](https://drive.google.com/file/d/1M8p2EHB-G0l0wQrpUvHN5EPJU9Cg9f6N/view?usp=sharing)
 
 ### Diagrama de Casos de Uso 2:Iniciar sesion en el sistema
 Permite a los usuarios registrados acceder al sistema utilizando sus credenciales, para utilizar las funciones correspondientes a su perfil (pedir turno, consultar agenda, etc.).
