@@ -1,293 +1,265 @@
 # Escenarios de Casos de Uso
 
-## Caso de uso 1 - Registrar nuevo paciente
+## Caso de uso 1 - Reprogramar turno
 
 ### Descripcion general
-Este caso de uso describe el proceso mediante el cual un nuevo individuo es incorporado al sistema como paciente. El objetivo principal es permitir que una persona cree una cuenta en el sistema, proporcionando la información personal y de contacto.
+Permitir a la Recepcionista modificar la fecha y/o hora de un turno médico previamente agendado para un paciente, a solicitud de este, asegurando la actualización de la agenda del médico y la notificación correspondiente al paciente.
 
 ## Flujo de eventos
 ### Pasos Desempeñados(ruta principal)
 
-1.El usuario accede a la opcion "Crear Cuenta" 
+1.La Recepcionista accede al módulo de "Gestión de Turnos" en el sistema. 
 
- * El usuario, a través de la interfaz del sistema, localiza y selecciona la opción
+ * Acceso a la interfaz de gestión.
 
-2.Ingresa sus datos personales y de contacto
+2.La Recepcionista busca el turno original del Paciente.
 
  * Completa un formulario con nombre, DNI, correo, dirección, teléfono, etc.
 
-3.El sistema valida los datos
+3.El Sistema muestra los detalles del turno encontrado.
 
- * Una vez que el usuario envía el formulario, el sistema realiza una serie de comprobaciones automáticas
+ * Presenta información del turno
 
-4.El sistema comprueba que no exista un usuario con el mismo correo o dni
+4.La Recepcionista confirma el turno con el Paciente y selecciona "Reprogramar Turno".
 
- * Después de la validación inicial de los datos, el sistema realiza una consulta a la base de datos de pacientes existente.
+ * Valida que sea el turno correcto.
 
-5.El sistema registra al nuevo paciente
+5.El Sistema presenta un calendario con la disponibilidad de nuevos horarios.
 
- * Si todas las validaciones son exitosas, el sistema procede a crear una nueva entrada en la base de datos de pacientes.
+ * Muestra slots libres para el mismo médico/especialidad.
 
-### Condiciones
+6.La Recepcionista consulta con el Paciente y selecciona el nuevo horario deseado.
 
-* **Precondiciones:** No debe existir una cuenta previo con el mismo correo/DNI
-* **Poscondiciones:** Usuario registrado y habilitado para iniciar sesion
-* **Suposiciones:** El formulario esta correctamente validado.
+ * Interacción verbal para elección del paciente.
 
-[Enlace del Escenario](https://drive.google.com/file/d/1WayhlAgg-4emzrAt6pgjwnbDxd40ZHv4/view?usp=sharing)
+7.La Recepcionista confirma la reprogramación en el sistema.
 
-## Escenario 1:Registrar Paciente - Registro exitoso de nuevo paciente
+ * Acción de confirmación explícita.
 
-Nombre del escenario: Registrar Paciente - Registro exitoso de nuevo paciente
+8.El Sistema libera el horario del turno original.
 
-Descripción: El recepcionista registra a un nuevo paciente sin errores.
+ * Marca el turno original como cancelado/reprogramado.
 
-### Pasos desempeñado
-1.El usuario accede a la opción "Crear cuenta".
- * El usuario entra al sistema y accede a la opcion "Crear cuenta"
+9.La Recepcionista informa verbalmente al Paciente sobre el nuevo horario
 
-2.El usuario ingresa sus datos personales y de contacto.
- * Completa un formulario con nombre, DNI, correo, dirección, teléfono, etc.
-
-3.El sistema valida los datos.
-* El sistema revisa que los campos estén completos y con formato correcto.
-  
-4.El sistema comprueba que no exista un usuario con el mismo correo o DNI.
-* El sistema revisa que los campos estén completos y con formato correcto.
-
-5.El sistema registra al nuevo paciente.
-* El sistema registra al paciente y guarda sus datos
-
-6.El sistema muestra un mensaje de confirmación de registro exitoso.
-* El sistema informa al paciente que se confirmo su registro
-
-7.El usuario puede iniciar sesión con las credenciales registradas.
-* El usuario es capaz de iniciar sesion
+ * Comunicación directa de la confirmación.
 
 ### Condiciones
 
-* Precondiciones: El usuario no tiene una cuenta registrada con el mismo correo o DNI.
+* **Precondiciones:** La Recepcionista ha iniciado sesión en el sistema de gestión de turnos médicos y
+posee los permisos necesarios para modificar citas.
 
-* Postcondiciones: El paciente está registrado en el sistema y puede iniciar sesión.
+* **Poscondiciones:** El turno original del Paciente ha sido liberado (marcado como "reprogramado" o
+"cancelado por reprogramación") en el sistema.
 
-* Suposiciones: Todos los campos del formulario son válidos y cumplen con los requisitos.
+* **Suposiciones:** El formulario de búsqueda de turnos y reprogramación funciona correctamente
 
 Prioridad: Alta
 
-Riesgo: Bajo.
+Riesgo: Media
 
-## Escenario 2:Registrar Paciente - Error en validación de datos del paciente
-Nombre del escenario: Registrar Paciente - Error en validación de datos del paciente
+[Enlace del Escenario](https://drive.google.com/file/d/1ImFNVPk5NlMwteKoioJqPe1z_GwNJf9e/view?usp=sharing)
 
-Descripción: El recepcionista intenta registrar a un paciente con datos inválidos.
+## Escenario 1:Reprogramar turno- Reprogramacion exitosa
 
-### Pasos desempeñados
-1.El usuario accede a la opción "Crear cuenta".
-* El usuario accede al sistema y oprime la opcion "crear cuenta"
+Nombre del escenario: Reprogramar turno- Reprogramacion exitosa
 
-2.El usuario ingresa datos inválidos (por ejemplo, formato de correo incorrecto).
-* El usuario ingresa datos invalidos
+Descripción: la Recepcionista debe iniciar la reprogramación de múltiples turnos debido a un cambio en la disponibilidad de un médico, y el paciente acepta sin problemas.
 
-3.El sistema muestra un mensaje de error indicando qué datos son inválidos.
-* El sistema informa un error en los datos del usuario
-  
-4.El usuario corrige los datos y vuelve a intentar el registro.
-* El usuario corrige los datos puestos y reintenta el registro
+### Pasos desempeñado
+1.La Recepcionista accede al módulo de "Gestión de Turnos" en el sistema. 
 
-### Condiciones
+ * Acceso a la interfaz de gestión.
 
-* Precondiciones: El usuario está intentando registrar una cuenta nueva.
+2.La Recepcionista busca el turno original del Paciente.
 
-* Postcondiciones: El usuario recibe un mensaje de error y no se registra la cuenta.
+ * Completa un formulario con nombre, DNI, correo, dirección, teléfono, etc.
 
-* Suposiciones: Al menos uno de los campos del formulario es inválido.
+3.El Sistema muestra los detalles del turno encontrado.
 
-Prioridad: Media.
+ * Presenta información del turno
 
-Riesgo: Medio.
+4.La Recepcionista confirma el turno con el Paciente y selecciona "Reprogramar Turno".
 
-## Escenario 3:Registrar Paciente - Registro de paciente con DNI ya existente
-Nombre del escenario: Registrar Paciente - Registro de paciente con DNI ya existente
+ * Valida que sea el turno correcto.
 
-Descripción: El recepcionista intenta registrar a un paciente con un DNI que ya está en el sistema.
+5.El Sistema presenta un calendario con la disponibilidad de nuevos horarios.
 
-### Pasos desempeñados
-1.El usuario accede a la opción "Crear cuenta".
-* El usuario accede al sistema y oprime la opcion "crear cuenta"
-  
-2.El usuario ingresa un DNI que ya está registrado en el sistema.
-* El usuario ingresa un Dni
+ * Muestra slots libres para el mismo médico/especialidad.
 
-3.El sistema muestra un mensaje de error indicando que el DNI ya está registrado.
-* El sistema informa un error con el dato dato,indicando que ya esta registrado
+6.La Recepcionista consulta con el Paciente y selecciona el nuevo horario deseado.
 
-4.El usuario puede buscar al paciente existente o corregir el DNI.
-* El usuario podria buscar a la sesion existente o corregir el dato.
+ * Interacción verbal para elección del paciente.
+
+7.La Recepcionista confirma la reprogramación en el sistema.
+
+ * Acción de confirmación explícita.
+
+8.El Sistema libera el horario del turno original.
+
+ * Marca el turno original como cancelado/reprogramado.
+
+9.La Recepcionista informa verbalmente al Paciente sobre el nuevo horario
+
+ * Comunicación directa de la confirmación.
 
 ### Condiciones
 
-Precondiciones: El usuario está intentando registrar una cuenta nueva con un DNI que ya está registrado.
+* Precondiciones: La Recepcionista tiene acceso al sistema y permisos para modificar agendas.
 
-Postcondiciones: El usuario recibe un mensaje de error y no se registra la cuenta.
+* Postcondiciones: El turno original del Paciente ha sido marcado como "Reprogramado" o "Cancelado por Ausencia del Médico".
 
-Suposiciones: El DNI ingresado ya está asociado a una cuenta existente.
+* Suposiciones:  El formulario de búsqueda de turnos y reprogramación funciona correctamente
+
+Prioridad: Alta
+
+Riesgo: Media
+
+ [Enlace del Escenario](https://drive.google.com/file/d/1rEjVAtPLHxXDsPqsM78jggARf29QBHSx/view?usp=sharing)
+
+## Escenario 2:Reprogramar turno -  Reprogramación Fallida
+Nombre del escenario: Reprogramar turno -  Reprogramación Fallida
+
+Descripción: La Recepcionista intenta reprogramar un turno, pero el sistema rechaza la operación porque el turno original no cumple con las reglas de negocio (ej., tiempo mínimo de antelación), lo que lleva a la Recepcionista a proponer una alternativa.
+
+### Pasos desempeñados
+1.El Paciente contacta a la Recepcionista solicitando reprogramar un turno para hoy mismo (ej., en 1 hora).
+
+* Solicitud de reprogramación urgente.
+
+2.La Recepcionista accede al módulo de "Gestión de Turnos" y busca el turno del Paciente.
+
+* Búsqueda y acceso al turno.
+
+3.El Sistema muestra los detalles del turno encontrado.
+
+* Visualización de la información del turno.
+  
+4.La Recepcionista selecciona la opción "Reprogramar Turno".
+
+* Intención de iniciar el proceso de reprogramación. 
+
+5.El Sistema realiza una validación automática de las políticas de reprogramación (ej., tiempo mínimo de antelación).
+
+* Verificación de reglas de negocio (ej., el turno es dentro de 1 hora y la política es 2 horas).
+
+6.El Sistema muestra un mensaje de error a la Recepcionista: "No se puede reprogramar un turno con menos de 2 horas de antelación."
+
+* Mensaje claro de rechazo y motivo.
+
+7.La Recepcionista comunica la situación al paciente explicando la política de la clínica.
+
+* Explicación transparente de la política.
+
+8.La Recepcionista registra la decisión final del Paciente en el sistema.
+
+* Se documenta la resolución.
+
+### Condiciones
+
+* Precondiciones: El Paciente solicita reprogramar un turno con una antelación menor a la permitida por las reglas de negocio.
+
+* Postcondiciones: El turno original del Paciente permanece inalterado o es cancelado (si el Paciente decide)
+
+* Suposiciones:  El sistema tiene implementadas y configuradas las reglas de negocio de tiempo mínimo para reprogramación.
 
 Prioridad: Alta.
 
-Riesgo: Alto.
+Riesgo: Medio.
+
+[Enlace del Escenario](https://drive.google.com/file/d/19625u_NJNJ6zfiF_h74w14XCisji7vbK/view?usp=sharing)
 
 
-* [Enlace del Escenario](https://drive.google.com/file/d/1Qq64--rHLb-W6_p2i3J7p43ZAuGBfYon/view?usp=sharing)
-
-## Caso de uso 2 - Iniciar sesion
+## Caso de uso 2 - Acceder historial clinico
 ### Descripcion General:
-Permite a los usuarios del sistema (pacientes, médicos o administradores) acceder a su cuenta mediante un proceso de autenticación. El usuario debe ingresar su nombre de usuario y contraseña válidos para ingresar a su panel correspondiente. Este caso de uso es esencial para asegurar que solo usuarios autorizados accedan a las funcionalidades del sistema.
+La Recepcionista consulta la información administrativa y un resumen limitado del historial clínico de un paciente para confirmar datos de contacto, obra social o historial de atenciones previas, antes de una consulta o para agendar un nuevo turno.
 
 ## Pasos desempeñados(Ruta Principal)
-1.El usuario accede a la opción "Iniciar Sesión".
+1. La Recepcionista selecciona al Paciente desde su agenda de turnos o lo busca en el sistema.
 
- * El usuario accede al sistema y accede a la opcion iniciar sesion
+ * Identificación del paciente.
 
-2.El usuario ingresa sus credenciales (correo y contraseña).
+2. La Recepcionista selecciona la opción "Acceder al Historial Clínico" (o "Ver Ficha de Paciente").        
 
- * El usuario ingresa sus datos
+ * Inicio de la acción de acceso.
 
-3.El sistema valida las credenciales.
+3. El Sistema verifica las credenciales de la Recepcionista y sus permisos de acceso al historial del Paciente.        
 
- * El sistema compara los datos ingresados con los registrados.
+ * Validación de usuario y autorización del rol.
 
-4.El sistema verifica si la cuenta está activa.
+4. El Sistema verifica la disponibilidad y existencia del historial clínico del Paciente.        
 
- * El sistema redirige al usuario al menu dependiendo su rol
+ * Comprobación de integridad de datos.
 
-5.El sistema otorga acceso al usuario.
+5. El Sistema carga y presenta la vista del historial clínico, limitada a las secciones permitidas para la Recepcionista (ej., datos de contacto, obra social, lista de atenciones).       
+ * Visualización de la información según permisos.
 
- * El sistema otro acceso al usuario a la pagina
+6. La Recepcionista navega a través de las secciones accesibles para verificar la información requerida.
+
+* Revisión de datos administrativos.
+
+7. La Recepcionista utiliza la información del historial para confirmar los datos del Paciente o para completar una tarea administrativa.
+
+* Utilización de datos para procesos de recepción.
 
 ### Condiciones
 
-* Precondiciones: El usuario debe tener una cuenta registrada y activa en el sistema.
-* Poscondiciones: El usuario ha iniciado sesión y tiene acceso a las funcionalidades del sistema.
-* Suposiciones: Las credenciales ingresadas son correctas y la cuenta está activa.
+* Precondiciones:  Existe un historial clínico registrado para el Paciente
+* Poscondiciones:  La Recepcionista ha consultado la información administrativa necesaria del historial clínico
+* Suposiciones:  El sistema de gestión de turnos tiene un módulo integrado o acceso al historial clínico con diferenciación de roles.
 
 Prioridad:Alto
 
 Riesgo:Medio
 
-## Escenario 1:Iniciar Sesión - Inicio de sesión exitoso
-Nombre del escenario: Iniciar Sesión - Inicio de sesión exitoso
+[Enlace Del Escenario](https://drive.google.com/file/d/1s8Xyrvil-fhIU45gaWZGSa5WFTWNwFkm/view?usp=sharing)
 
-Descripción: El usuario ingresa sus credenciales correctamente y accede al sistema.
+## Escenario 1:Acceder historial clinico - Acceso fallido
+### Descripcion General:
+Una Recepcionista intenta acceder al historial clínico de un paciente, pero el sistema informa que no se encontró ningún historial asociado a ese paciente, indicando un posible error en el registro o una falta de historial previo.
 
-### Pasos desempeñados
+## Pasos desempeñados(Ruta Secundaria)
+1. La Recepcionista selecciona al Paciente (ej., un paciente nuevo o con un registro antiguo sin historial cargado) desde el sistema.
 
-1.El usuario accede a la opción "Iniciar Sesión".
-* El usuario navega hasta la página de inicio de sesión del sistema.
+  * Identificación del paciente.
 
-2.El usuario ingresa sus credenciales (correo y contraseña).
-* El usuario debe ingresar su dirección de correo electrónico y contraseña en los campos correspondientes.
+2. La Recepcionista selecciona la opción "Acceder al Historial Clínico".
 
-3.El sistema valida las credenciales.
-* El sistema verifica que el correo y la contraseña ingresados coincidan con los almacenados en la base de datos.
+  * Inicio de la acción de acceso.
 
-4.El sistema verifica si la cuenta está activa.
-* El sistema comprueba el estado de la cuenta para asegurarse de que no esté desactivada o bloqueada.
+3. El Sistema verifica las credenciales de la Recepcionista y sus permisos de acceso.
 
-5.El sistema otorga acceso al usuario.
-* Si las credenciales son válidas y la cuenta está activa, el sistema permite el acceso al usuario.
-
-6.El sistema redirige al usuario a la página principal.
-* El usuario es llevado a la página principal del sistema, donde puede acceder a todas las funcionalidades disponibles.
-
-### Condiciones
-
-* Precondiciones: El usuario tiene una cuenta registrada y activa en el sistema.
-
-* Postcondiciones: El usuario ha iniciado sesión y tiene acceso a las funcionalidades del sistema.
-
-* Suposiciones: Las credenciales ingresadas son correctas y la cuenta está activa.
-
-Prioridad: Alta
-
-Riesgo:Bajo
-
-## Escenario 2:Iniciar Sesión - Error en validación de credenciales
-Nombre del escenario: Iniciar Sesión - Error en validación de credenciales
-
-Descripción: El usuario ingresa credenciales incorrectas y no puede acceder al sistema.
-
-### Pasos desempeñados
-1.El usuario accede a la opción "Iniciar Sesión".
-
-* El usuario navega hasta la página de inicio de sesión del sistema.
- 
-2.El usuario ingresa credenciales incorrectas.
-
-* El usuario ingresa un correo y/o contraseña que no coinciden con los registros almacenados.
-
-3.El sistema muestra un mensaje de error indicando que las credenciales son incorrectas.
-
-* El sistema detecta que las credenciales no coinciden y notifica al usuario del error.
-
-4.El usuario puede intentar nuevamente ingresar sus credenciales.
-
-* El usuario tiene la opción de corregir sus datos y volver a intentar el inicio de sesión.
-
-### Condiciones
-
-* Precondiciones: El usuario intenta iniciar sesión con credenciales incorrectas.
-
-* Postcondiciones: El usuario recibe un mensaje de error y no se otorga acceso al sistema.
-
-* Suposiciones: Al menos una de las credenciales ingresadas es incorrecta.
-
-Prioridad:Media
-
-Riesgo:Medio
-
-## Escenario 3:  Iniciar Sesión - Cuenta inactiva
-
-Nombre del escenario: Iniciar Sesión - Cuenta inactiva
-
-Descripción: El usuario intenta iniciar sesión con una cuenta que está inactiva.
-
-### Pasos desempeñados
-El usuario accede a la opción "Iniciar Sesión".
- * Información del paso: El usuario navega hasta la página de inicio de sesión del sistema.
-
-1.El usuario ingresa sus credenciales (correo y contraseña).
- * El usuario ingresa su dirección de correo electrónico y contraseña en los campos correspondientes.
-
-2.El sistema valida las credenciales.
-
- * El sistema verifica que el correo y la contraseña ingresados coincidan con los almacenados en la base de datos.
-
-3.El sistema verifica que la cuenta está inactiva.
-
- * El sistema comprueba el estado de la cuenta y detecta que está inactiva.
-
-4.El sistema muestra un mensaje indicando que la cuenta está inactiva.
-
- * El sistema notifica al usuario que su cuenta está inactiva y no puede acceder al sistema.
-
-5.El usuario puede intentar reactivar su cuenta o contactar al soporte.
-
- * El usuario tiene la opción de seguir las instrucciones para reactivar su cuenta o contactar al soporte técnico.
-
-### Condiciones
-
-* Precondiciones: El usuario tiene una cuenta registrada pero inactiva en el sistema.
-
-* Postcondiciones: El usuario recibe un mensaje indicando que la cuenta está inactiva y no se otorga acceso al sistema.
-
-* Suposiciones: La cuenta del usuario está marcada como inactiva en el sistema.
-
-Prioridad: Alta.
-
-Riesgo: Alto.
+  * Validación de usuario y autorización.
+  
+4. El Sistema intenta localizar el historial clínico asociado al Paciente seleccionado.                
+  
+  * Búsqueda del historial en la base de datos.
 
 
-* [Enlace del Escenario](https://drive.google.com/file/d/1grTwZ1yFfQ_mwM2GZ8DCtCSmkONccC5Y/view?usp=sharing)
+5. El Sistema determina que no existe un historial clínico registrado para el Paciente, o no lo puede cargar.
+
+  * El historial no se encuentra o hay un error de acceso a datos.        
+  
+7. El Sistema muestra un mensaje de error a la Recepcionista: "Historial Clínico no encontrado para este Paciente." o "Error al cargar el historial."
+
+  * Notificación clara de la ausencia o fallo.
+
+8. La Recepcionista informa al Paciente (si aplica) sobre la ausencia de historial o contacta al personal de TI si es un error técnico.
+
+  * Gestión de la excepción.
+
+* Precondiciones:   Se selecciona un Paciente para el cual no existe un historial clínico en el sistema o no es accesible.
+* Poscondiciones:   El acceso al historial clínico es denegado o no se logra cargar.
+* Suposiciones:   El sistema tiene una base de datos de historiales clínicos
+
+Prioridad: Media
+
+Riesgo: Bajo
+
+
+
+
+* [Enlace del Escenario](https://drive.google.com/file/d/1MMEcBkL7AByZBlNoc0a1xQIfvYvThOti/view?usp=sharing)
 
 ## Caso de uso 3 - Solicitar Turno Medico
 
