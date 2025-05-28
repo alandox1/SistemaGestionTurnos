@@ -9,13 +9,12 @@ Este caso de uso permite el recepcionista modificar la fecha y/o hora de un turn
 
 * [Reprogramar Turno](https://drive.google.com/file/d/1M8p2EHB-G0l0wQrpUvHN5EPJU9Cg9f6N/view?usp=sharing)
 
-### Diagrama de Casos de Uso 2:Iniciar sesion en el sistema
-Permite a los usuarios registrados acceder al sistema utilizando sus credenciales, para utilizar las funciones correspondientes a su perfil (pedir turno, consultar agenda, etc.).
+### Diagrama de Casos de Uso 2: Acceder Historial Clínico del Paciente
+Permite a los profesionales de la salud (Médicos y, con permisos limitados, Recepcionistas) consultar la información médica completa de un paciente en el sistema.
 
-![iniciarsesion](https://github.com/user-attachments/assets/c60b6cfc-b32a-4842-bc02-e89ecb21920e)
+![AccederHistorial](https://github.com/user-attachments/assets/d51e4431-e1b9-4043-af30-7b89fdb916f1)
 
-
-* [Iniciar sesion](https://drive.google.com/file/d/1BjzbVAUFwccRm8fK8lLpwLwtAw-CjNSZ/view?usp=sharing)
+* [Acceder Historial Clínico del Paciente](https://drive.google.com/file/d/1BJn5o5bpto6Y5N8xEY1rzOrdN6l_a2c_/view?usp=sharing)
 ### Diagrama de Casos de Uso 3:Solicitar Turno Medico
 Permite al paciente (o al recepcionista en su nombre) seleccionar un médico, una especialidad y una fecha para agendar un turno. El sistema muestra los horarios disponibles y confirma la reserva del turno.
 
