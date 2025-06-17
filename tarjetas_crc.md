@@ -42,7 +42,7 @@ Quiero recordar mis turnos anteriores.
 nombre, apellido, especialidad, matricula, horariosAtencion
 
 
-![Captura de pantalla 2025-04-21 143544](https://github.com/user-attachments/assets/90bddab9-6c66-4cc4-bced-d8de16c1cf31)
+![Captura de pantalla 2025-06-17 161658](https://github.com/user-attachments/assets/f26b26e7-fbf8-4f33-9978-314af2edcc35)
 
 
 
