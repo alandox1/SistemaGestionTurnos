@@ -102,13 +102,14 @@ Me encargo de la gestión de la agenda. Registro nuevos pacientes.organizo turno
 
 **Colaboradores:** Médico, Turno, Paciente
 
-**Propiedad:** fechaInicio, fechaFin, medicoId, listaTurnos,turno.
+**Propiedad:** fecha,medicoId, listaTurnos,turno.
 
 
-![Captura de pantalla 2025-04-09 225817](https://github.com/user-attachments/assets/f49b1418-e2e0-4917-93b5-72d138691247)
+![Captura de pantalla 2025-06-17 190745](https://github.com/user-attachments/assets/e601077c-6832-4a1f-979c-fe378b794f71)
 
 
-* [Tarjetas CRC](https://drive.google.com/file/d/1dVNKaSPWde2yLGQqWQTHuyY5oxJgoMoH/view?usp=sharing)
+
+* [Tarjetas CRC](https://docs.google.com/spreadsheets/d/13WuNPHDXRz9LivkCjb13i8O7DB_nfzYK/edit?usp=sharing&ouid=100590903652086293439&rtpof=true&sd=true)
 
 
 
