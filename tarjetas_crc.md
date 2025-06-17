@@ -82,7 +82,7 @@ Me encargo de la gestión de la agenda. Registro nuevos pacientes.organizo turno
 
 **Colaboradores:** Paciente, Médico,Recepcionista,Agenda.
 
-**Propiedad:** fechaInicio, horaInicio, fechaFin, horaFin,pacienteld,médicold,estado.
+**Propiedad:** fechaHora,pacienteld,médicold,estado.
 
 
 ![Captura de pantalla 2025-06-17 190230](https://github.com/user-attachments/assets/18cb31f8-9e36-42e8-a638-05e13b8a647d)
