@@ -19,7 +19,7 @@ Quiero recordar mis turnos anteriores.
 
 **Colaboradores:** Agenda, Turno, Médico,recepcionista.
 
-**Propiedad:** nombre, apellido, fechaNacimiento, DNI, direccion,telefono,email.
+**Propiedad:** nombre, apellido, fechaNacimiento, DNI, direccion,telefono,email,matricula,horariosAtencion
 
 ![Captura de pantalla 2025-04-21 143537](https://github.com/user-attachments/assets/c451b238-8081-4d05-96f9-27afa8450291)
 
