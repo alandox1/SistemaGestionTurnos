@@ -82,9 +82,10 @@ Me encargo de la gestión de la agenda. Registro nuevos pacientes.organizo turno
 
 **Colaboradores:** Paciente, Médico,Recepcionista,Agenda.
 
-**Propiedad:** fechaInicio, horaInicio, fechaFin, horaFin,paciente (ID del paciente),médico (ID del médico),estado.
+**Propiedad:** fechaInicio, horaInicio, fechaFin, horaFin,pacienteld,médicold,estado.
 
-![Captura de pantalla 2025-04-30 172425](https://github.com/user-attachments/assets/76606215-7c8f-49bd-b1d3-67c8f23d47e0)
+
+![Captura de pantalla 2025-06-17 190230](https://github.com/user-attachments/assets/18cb31f8-9e36-42e8-a638-05e13b8a647d)
 
 
 ### Tarjeta CRC: Agenda
