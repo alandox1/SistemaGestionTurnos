@@ -1,4 +1,4 @@
-#Anexo - Aplicación de Patrón de Diseño de Comportamiento - Observer
+# Anexo - Aplicación de Patrón de Diseño de Comportamiento - Observer
 
 El patrón **Observer** (Observador) es un patrón de diseño **de comportamiento** que define una dependencia de uno a muchos entre objetos, de manera que cuando un objeto (el "Sujeto") cambia de estado, todos sus dependientes (los "Observadores") son notificados y actualizados automáticamente.
 
