@@ -1,6 +1,4 @@
-# Patrón de Diseño: Facade
-
-## Propósito y Tipo del Patrón
+# Anexo - Aplicación de Patrón de Diseño estructural - Facade
 
 El patrón **Facade** (Fachada) es un patrón de diseño **estructural** que proporciona una interfaz unificada a un conjunto de interfaces en un subsistema. Una fachada define una interfaz de nivel superior que hace que el subsistema sea más fácil de usar.
 
