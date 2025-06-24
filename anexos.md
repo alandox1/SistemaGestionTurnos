@@ -4,3 +4,5 @@
 
 * [Anexo - Principios SOLID](solid.md)
 
+* [Anexo - Patrón Creacional – Singleton](PatronDeDisenoCreacional.md)
+
