@@ -2,7 +2,7 @@
 
 El patrón **Singleton** (Instancia Única) es un patrón de diseño **creacional** que garantiza que una clase tenga solo una instancia y proporciona un punto de acceso global a ella.
 
-En nuestro sistema de gestión de salud, el Sistema central es una entidad única que coordina todas las operaciones (gestión de turnos, pacientes, médicos, etc.). Asegurar que solo exista una instancia de Sistema` previene inconsistencias de datos, problemas de sincronización y asegura un control centralizado de los recursos y la lógica de negocio, lo cual es crucial en un entorno multiusuario.
+En nuestro sistema de gestión de salud, el Sistema central es una entidad única que coordina todas las operaciones (gestión de turnos, pacientes, médicos, etc.). Asegurar que solo exista una instancia de Sistema previene inconsistencias de datos, problemas de sincronización y asegura un control centralizado de los recursos y la lógica de negocio, lo cual es crucial en un entorno multiusuario.
 
 ## Motivación
 
